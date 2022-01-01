@@ -17,15 +17,11 @@ body{
 }
   
 a{
-    color: #1bbd36;
-    text-decoration: none;
+    color: #2c7a80;
+    text-decoration: none !important;
 }
   
-a:hover {
-    color: #2ae149;
-    text-decoration: none;
-}
-  
+
 h1, h2, h3, h4, h5, h6 , p{
     font-family: "Roboto", sans-serif;
 }
@@ -39,17 +35,16 @@ ul{
                 The Navigation
 ***********************************************/
 .header{
-    position: relative;
-    height: 100px;
+    position: fixed;
     width: 100%;
     display: flex;
     z-index: 999;
     justify-content: center;
     align-content: center;
-    background-color: rgba(239, 248, 248, 0.5);
+    background-color: rgba(239, 248, 248, 0.9);
     border-width: 4px;
     border-bottom: rgba(27, 82, 114, 0.5);
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.75);
     
 }
 .logo{
@@ -97,6 +92,10 @@ ul{
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px;
+}
+.nav-list-items > .list-item a{
+    color: unset, initial !important;
+    text-decoration: none !important; 
 }
 
 .media-links{
@@ -171,7 +170,7 @@ ul{
                 ,url(../img/about.jpg) center no-repeat;
 	background-size:cover;
     background-blend-mode: darken;
-    min-height: 600px;
+    min-height: 800px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -225,6 +224,11 @@ ul{
     justify-content: space-around;
 }
 
+.address span{
+    font-style: bold;
+    font-weight: 600;
+}
+
 .footer-list{
     display: flex;
     flex-direction: column;
@@ -232,15 +236,48 @@ ul{
 
 .footer-list-items > .list-item a{
     text-decoration: none;
+    font-weight: 600;
+    font-style: bold;
 }
 
+
+.newsletter form{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius : 10px;
+}
+
+.newsletter input[type="email"]{
+    outline: 0;
+    border: 0;
+    margin:0 ;
+    padding: 4px;
+    height: 35px;
+    width: 250px;
+}
+
+.newsletter input[type="submit"] {
+    text-transform: capitalize;
+    font-style: bold;
+    font-family: "Roboto";
+    font-weight: 600;
+    color: white;
+    
+}
+
+
 .copyright{
+    font-style: bold;
+    font-family: "Roboto";
+    font-weight: 600;
     text-align: center;
 }
 
 .bottom-footer > .media-links{
     font-size: 24px;
-    
     align-items: center;
     margin-bottom: 15px;
 }
