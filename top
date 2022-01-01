@@ -1,0 +1,162 @@
+[1mdiff --git a/Readme.txt b/Readme.txt[m
+[1mdeleted file mode 100644[m
+[1mindex 56a2054..0000000[m
+[1m--- a/Readme.txt[m
+[1m+++ /dev/null[m
+[36m@@ -1,6 +0,0 @@[m
+[31m-Thanks for downloading this template![m
+[31m-[m
+[31m-Template Name: Company[m
+[31m-Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/[m
+[31m-Author: BootstrapMade.com[m
+[31m-License: https://bootstrapmade.com/license/[m
+[1mdiff --git a/about.html b/about.html[m
+[1mindex f279924..e69de29 100644[m
+[1m--- a/about.html[m
+[1m+++ b/about.html[m
+[36m@@ -1,449 +0,0 @@[m
+[31m-<!DOCTYPE html>[m
+[31m-<html lang="en">[m
+[31m-[m
+[31m-<head>[m
+[31m-  <meta charset="utf-8">[m
+[31m-  <meta content="width=device-width, initial-scale=1.0" name="viewport">[m
+[31m-[m
+[31m-  <title>About - Company Bootstrap Template</title>[m
+[31m-  <meta content="" name="description">[m
+[31m-  <meta content="" name="keywords">[m
+[31m-[m
+[31m-  <!-- Favicons -->[m
+[31m-  <link href="assets/img/favicon.png" rel="icon">[m
+[31m-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">[m
+[31m-[m
+[31m-  <!-- Google Fonts -->[m
+[31m-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">[m
+[31m-[m
+[31m-  <!-- Vendor CSS Files -->[m
+[31m-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">[m
+[31m-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">[m
+[31m-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">[m
+[31m-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">[m
+[31m-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">[m
+[31m-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">[m
+[31m-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">[m
+[31m-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">[m
+[31m-[m
+[31m-  <!-- Template Main CSS File -->[m
+[31m-  <link href="assets/css/style.css" rel="stylesheet">[m
+[31m-[m
+[31m-  <!-- =======================================================[m
+[31m-  * Template Name: Company - v4.1.0[m
+[31m-  * Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/[m
+[31m-  * Author: BootstrapMade.com[m
+[31m-  * License: https://bootstrapmade.com/license/[m
+[31m-  ======================================================== -->[m
+[31m-</head>[m
+[31m-[m
+[31m-<body>[m
+[31m-[m
+[31m-  <!-- ======= Header ======= -->[m
+[31m-  <header id="header" class="fixed-top">[m
+[31m-    <div class="container d-flex align-items-center">[m
+[31m-[m
+[31m-      <h1 class="logo me-auto"><a href="index.html"><span>Com</span>pany</a></h1>[m
+[31m-      <!-- Uncomment below if you prefer to use an image logo -->[m
+[31m-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->[m
+[31m-[m
+[31m-      <nav id="navbar" class="navbar order-last order-lg-0">[m
+[31m-        <ul>[m
+[31m-          <li><a href="index.html">Home</a></li>[m
+[31m-[m
+[31m-          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>[m
+[31m-            <ul>[m
+[31m-              <li><a href="about.html" class="active">About Us</a></li>[m
+[31m-              <li><a href="team.html">Team</a></li>[m
+[31m-              <li><a href="testimonials.html">Testimonials</a></li>[m
+[31m-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>[m
+[31m-                <ul>[m
+[31m-                  <li><a href="#">Deep Drop Down 1</a></li>[m
+[31m-                  <li><a href="#">Deep Drop Down 2</a></li>[m
+[31m-                  <li><a href="#">Deep Drop Down 3</a></li>[m
+[31m-                  <li><a href="#">Deep Drop Down 4</a></li>[m
+[31m-                  <li><a href="#">Deep Drop Down 5</a></li>[m
+[31m-                </ul>[m
+[31m-              </li>[m
+[31m-            </ul>[m
+[31m-          </li>[m
+[31m-[m
+[31m-          <li><a href="services.html">Services</a></li>[m
+[31m-          <li><a href="portfolio.html">Portfolio</a></li>[m
+[31m-          <li><a href="pricing.html">Pricing</a></li>[m
+[31m-          <li><a href="blog.html">Blog</a></li>[m
+[31m-          <li><a href="contact.html">Contact</a></li>[m
+[31m-[m
+[31m-        </ul>[m
+[31m-        <i class="bi bi-list mobile-nav-toggle"></i>[m
+[31m-      </nav><!-- .navbar -->[m
+[31m-[m
+[31m-      <div class="header-social-links d-flex">[m
+[31m-        <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>[m
+[31m-        <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>[m
+[31m-        <a href="#" class="instagram"><i class="bu bi-instagram"></i></a>[m
+[31m-        <a href="#" class="linkedin"><i class="bu bi-linkedin"></i></i></a>[m
+[31m-      </div>[m
+[31m-[m
+[31m-    </div>[m
+[31m-  </header><!-- End Header -->[m
+[31m-[m
+[31m-  <main id="main">[m
+[31m-[m
+[31m-    <!-- ======= Breadcrumbs ======= -->[m
+[31m-    <section id="breadcrumbs" class="breadcrumbs">[m
+[31m-      <div class="container">[m
+[31m-[m
+[31m-        <div class="d-flex justify-content-between align-items-center">[m
+[31m-          <h2>About</h2>[m
+[31m-          <ol>[m
+[31m-            <li><a href="index.html">Home</a></li>[m
+[31m-            <li>About</li>[m
+[31m-          </ol>[m
+[31m-        </div>[m
+[31m-[m
+[31m-      </div>[m
+[31m-    </section><!-- End Breadcrumbs -->[m
+[31m-[m
+[31m-    <!-- ======= About Us Section ======= -->[m
+[31m-    <section id="about-us" class="about-us">[m
+[31m-      <div class="container" data-aos="fade-up">[m
+[31m-[m
+[31m-        <div class="row content">[m
+[31m-          <div class="col-lg-6" data-aos="fade-right">[m
+[31m-            <h2>Eum ipsam laborum deleniti velitena</h2>[m
+[31m-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3>[m
+[31m-          </div>[m
+[31m-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">[m
+[31m-            <p>[m
+[31m-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate[m
+[31m-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in[m
+[31m-              culpa qui officia deserunt mollit anim id est laborum[m
+[31m-            </p>[m
+[31m-            <ul>[m
+[31m-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>[m
+[31m-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>[m
+[31m-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>[m
+[31m-            </ul>[m
+[31m-            <p class="fst-italic">[m
+[31m-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore[m
+[31m-              magna aliqua.[m
+[31m-            </p>[m
+[31m-          </div>[m
+[31m-        </div>[m
+[31m-[m
+[31m-      </div>[m
+[31m-    </section><!-- End About Us Section -->[m
+[31m-[m
+[31m-    <!-- ======= Our Team Section ======= -->[m
+[31m-    <section id="team" class="team section-bg">[m
+[31m-      <div class="container">[m
+[31m-[m
+[31m-        <div class="section-title" data-aos="fade-up">[m
+[31m-          <h2>Our <strong>Team</strong></h2>[m
+[31m-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>[m
+[31m
