@@ -133,7 +133,9 @@ ul{
         display: flex;
         justify-content: center;
     }
-    
+    .media-links{
+        display:none;
+    }
     
 }
 
@@ -237,6 +239,7 @@ ul{
     padding: 15px;
     background-color: rgba(0, 0, 0, .5);
     border-radius : 10px;
+    width: 90%;
 }
 
 .newsletter input[type="email"]{
@@ -245,7 +248,7 @@ ul{
     margin:0 ;
     padding: 4px;
     height: 35px;
-    width: 250px;
+    width: 80%;
 }
 
 .newsletter input[type="submit"] {
