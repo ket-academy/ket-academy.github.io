@@ -49,7 +49,7 @@ ul{
     z-index: 999;
     background-color: rgb(252, 252, 252, .95);
     border-bottom: rgba(27, 82, 114, 0.5);
-    box-shadow: 0px 4px 30px 10px rgba(0, 0, 0, 1);
+    box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 1);
     /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.75);*/
     transition: all 0.5s;
     overflow-x:hidden;
@@ -85,7 +85,7 @@ ul{
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: rgba(17, 16, 16, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
@@ -107,23 +107,6 @@ ul{
 }
 
 
-
-.media-links{
-    border-left: 1px solid #c4c4c4;
-    background-color: rgba(17, 16, 16, 0.3);
-    border-radius: 10px;
-}
-
-.media-links > a{
-    font-size: 1.5em;
-    display: inline-block;
-    line-height: 0px;
-    transition: 0.3s;
-    padding: 15px;
-}
-.media-links a i {
-    line-height: 0;
-  }
 
 
 /** ====Media queries for small screen ******/
@@ -239,7 +222,7 @@ ul{
     flex-wrap: wrap;
     z-index: 900;
     background-color: rgba(239, 248, 248, 0.5);
-    box-shadow: 0px 4px 30px 10px rgba(0, 0, 0, 1);
+    box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, .2);
     padding: 10px;
     padding-bottom: 5px;
 }
@@ -280,7 +263,7 @@ ul{
     align-content: center;
     justify-content: center;
     padding: 15px;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .2);
     border-radius : 10px;
     width: 90%;
 }
@@ -311,7 +294,22 @@ ul{
     text-align: center;
 }
 
+
+.media-links > a{
+    font-size: 1.5em;
+    display: inline-block;
+    line-height: 0px;
+    transition: 0.3s;
+    padding: 15px;
+}
+.media-links a i {
+    line-height: 0;
+  }
+
+
 .bottom-footer > .media-links{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
     align-items: center;
     margin-bottom: 15px;
 }
@@ -427,4 +425,108 @@ ul{
     background-color: rgba(200,200,200, 1 );
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/*********************************************************************************
+********************************************************************************
+*********************Contact PAGE SPECIFIC STYLING*********************************
+***********************************************************************************
+**********************************************************************************/
+
+
+/**************************************
+***********THe contact form******************
+************************************/
+
+.contact{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.contact-info{
+    width: 90%;
+    z-index: 666;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 10px;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 30px;
+    margin: 12px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.contact-info i {
+    font-size: 20px;
+    color: #2096c5;
+    float: left;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #2096c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s;
+  }
+  .contact-info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #111;
+  }
+  
+  .contact-info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #444444;
+  }
+  
+  .contact-info:hover i {
+    background: #2096c5;
+    color: #fff;
+  }
+  
+
+.contact-form{
+    width: 90%;
+    z-index: 666;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 10px;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    
+    padding: 10px;
+    margin: 12px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.email-form{
+    width: 100%;
+}
+
+.email-from > .personal-info{
+    display: flex;
+}
+
+.email-from > .personal-info{
+    width: 40%;
+    padding: 3px;
 }

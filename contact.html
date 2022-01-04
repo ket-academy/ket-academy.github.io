@@ -63,16 +63,56 @@
         </nav>
     </header>
     
-    <!-- =========== Introduction section: carousel-->
-    <section class="intro" id="intro">
-        <div class="intro-text">
-            <h1>🔜🔜<br>COMING SOON</h1>
-            <br>
-            <p>
-                ✈✈This page is under implementation and will be available soon
-            </p>
-        </div>
-    </section>
+     <!-- ======= Contact Section ======= -->
+     <div class="map-section">
+        <iframe style="border:0; width: 100%; height: 350px; margin-top: 20px;" 
+        src="https://maps.google.com//......" frameborder="0" allowfullscreen></iframe>
+     </div>
+  
+      <section id="contact" class="contact">
+          <div class="contact-info">
+              <div class="location">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Chappelle Obili<br>8687, Yaounde, CMR.</p>
+              </div>
+              
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>ketacademy1@gmail.com<br>info@open-dreams.com</p>
+              </div>
+
+              <div class="call">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>(+237) 677 777 777 <br>(+237) 677 777 777</p>
+              </div>
+          </div>
+
+          <div class="contact-form">
+              <form action="" method= "post" role="form" class="email-form">
+                <div class="personal-info">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <div class="message-status">
+                    <div class="m-error">
+                        There was an error sending you message.
+                    </div>
+                    <div class="m-success">
+                        Your message has been succesfully sent. Thank You!
+                    </div>
+                </div>
+                <div class="message-submit">
+                    <button type="submit">Send Message</button>
+                </div>
+              </form>
+          </div>
+
+      </section>
 
     <!-- =========Footer============ -->
     <footer class="footer" id="footer">
