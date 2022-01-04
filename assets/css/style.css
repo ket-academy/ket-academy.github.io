@@ -94,16 +94,21 @@ ul{
     padding: 10px;
 }
 .nav-list-items > .list-item a{
-    color: initial !important;
-    text-decoration: none !important; 
-    padding: 5px;
-  
     font-family: "Roboto", sans-serif;
     font-size: 1.8em;
     font-weight: 600;
     white-space: nowrap;
     text-transform: uppercase;
     transition: 0.3s;
+    color: initial !important;
+    text-decoration: none !important; 
+    padding: 4px;
+}
+
+.active-list-item a, .list-item:hover a{
+    background-color: #2096c5;
+    border-radius: 20%;
+    transition: ease-out 0.2s;
 }
 
 
@@ -444,6 +449,12 @@ ul{
 ***********THe contact form******************
 ************************************/
 
+.map-section{
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .contact{
     margin: 10px;
     display: flex;
@@ -454,19 +465,25 @@ ul{
 }
 
 .contact-info{
-    width: 90%;
-    z-index: 666;
+    width: 80%;
     background-color: rgba(255, 255, 255, .9);
     border-radius: 10px;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-    padding: 30px;
+    padding: 40px;
     margin: 12px;
-
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
 }
+
+@media(max-width: 900px){
+    .contact-info{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+
 
 
 .contact-info i {
@@ -504,29 +521,52 @@ ul{
   
 
 .contact-form{
-    width: 90%;
-    z-index: 666;
+    width: 80%;
     background-color: rgba(255, 255, 255, .9);
     border-radius: 10px;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-    
-    padding: 10px;
+    padding: 30px;
     margin: 12px;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .email-form{
     width: 100%;
-}
-
-.email-from > .personal-info{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.email-from > .personal-info{
-    width: 40%;
-    padding: 3px;
+.email-form input, textarea{
+    margin-bottom: 20px;
+}
+
+.email-form input, textarea{
+    box-shadow: none !important;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.email-form input{
+    height: 44px;
+}
+
+.email-form textarea{
+    padding: 10px 12px;
+}
+
+.email-form button[type="submit"]{
+    background: #2096c5;
+    border: 0;
+    padding: 10px 24px;
+    margin-top: 15px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+    align-self: center;
+}
+.email-form button[type="submit"]:hover{
+    background-color: #2c7a80;
+}
+.message-status, .m-error, .m-success{
+    display: none;
 }
