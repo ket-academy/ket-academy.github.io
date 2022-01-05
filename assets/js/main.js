@@ -58,7 +58,7 @@ const subjects = {
   ICT: "ICT",
   Chem: "Chemistry",
   Phy: "Physics",
-  Bio: "Biology"
+  Bio: "Biology",
 };
 
 
@@ -96,6 +96,31 @@ searchNotesButton.addEventListener('click', (ev)=>{
 
 //ordering solutions to past questions
 
+//odering past questions
 
-//
+
+
+/*================Extracting info from JSON database==========*/
+
+$.getJSON("https://bioinfobot.github.io/data/2017-05.json")
+.done(function( data ) {
+   console.log(data)
+});
+
+$.getJSON("https://bioinfobot.github.io/data/2017-05.json", function(json) {
+    console.log(json); 
+});
+
+
+fetch('https://bioinfobot.github.io/data/2017-05.json')
+  .then(res => res.json())
+  .then(json => {
+    //json vaiable contains object with data
+  })
+
+
+  $(function(){
+    $.getJSON("https://bioinfobot.github.io/data/2017-05.json",function(data)
+    {console.log(data)});
+ })();
 
