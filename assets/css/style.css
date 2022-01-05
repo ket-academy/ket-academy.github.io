@@ -105,10 +105,10 @@ ul{
     padding: 4px;
 }
 
-.active-list-item a, .list-item:hover a{
+.nav-list-items > .active-list-item a, .nav-list-items > .list-item:hover a{
     background-color: #2096c5;
     border-radius: 20%;
-    transition: ease-out 0.2s;
+    transition: ease-out 0.4s;
 }
 
 
@@ -483,9 +483,6 @@ ul{
     }
 }
 
-
-
-
 .contact-info i {
     font-size: 20px;
     color: #2096c5;
@@ -530,10 +527,16 @@ ul{
 }
 
 .email-form{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media(max-width: 675px){
+    .email-form, .contact-info, .contact-form{
+        width: 100%;
+    }
 }
 
 .email-form input, textarea{
@@ -555,7 +558,6 @@ ul{
 }
 
 .email-form button[type="submit"]{
-    background: #2096c5;
     border: 0;
     padding: 10px 24px;
     margin-top: 15px;
@@ -564,9 +566,186 @@ ul{
     border-radius: 4px;
     align-self: center;
 }
-.email-form button[type="submit"]:hover{
-    background-color: #2c7a80;
-}
+
 .message-status, .m-error, .m-success{
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************************
+********************************************************************************
+*********************Library PAGE SPECIFIC STYLING*********************************
+***********************************************************************************
+**********************************************************************************/
+
+
+/**************************************
+***********THe Notes section******************
+************************************/
+
+.library-info{
+    margin: 20px;
+    border-radius: 25%;
+    width: 90%;
+    color:rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, .9);
+    text-align: center;
+}
+
+.library-info h2{
+    font-weight: 800;
+    font-size: 2em;
+    font-style: bold;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 1px -5px rgba(239, 248, 248, 0.5);
+}
+
+.library-info p{
+    color:rgba(255, 255, 255, 0.9);
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
+}
+
+.content-title{
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+.content-title span{
+    position: absolute;
+    top: 30px;
+    color: rgb(217, 230, 235);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 0;
+}
+.content-title h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #191919;
+    position: relative;
+    z-index: 2;
+}
+
+.content-title p {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  @media (max-width: 575px) {
+    .content-title h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    .content-title span {
+      font-size: 38px;
+    }
+  }
+
+
+
+  .lib-notes{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+      margin: 20px;
+      background-color: rgba(238, 241, 243, 0.4);
+  }
+
+  .notes{
+    display: table-row;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-image: url(../img/library/book-5.jpeg);
+    background-size:cover;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    margin: 20px;
+  }
+
+  .notes > .note-title{
+      font-size: 1.2em;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: rgba(17, 18, 19, 0.6);
+      width: 100%;
+      top:0;
+      text-align: center;
+  }
+
+.notes > .actions-bar{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow:hidden;
+}
+
+  .notes > .actions-bar i{
+    font-size: 40px;
+    color: rgba(255, 255, 255, .8);
+  }
+
+  .notes > .actions-bar i:hover{
+    color:rgb(23, 76, 119);
+  }
+
+  .notes-notes{
+      text-align: center;
+      width: 60%;
+      margin: auto;
+  }
+
+  @media(max-width: 600px){
+      .notes-notes{
+          width: 100%;
+      }
+  }
+
+  .notes-notes label{
+      font-family: "Poppins", sans-serif;
+  }
+
+  .notes-notes select{
+      width: 80%;
+      height: 30px;
+  }
+  .notes-notes select:focus{
+      border-width: 2px;
+      border-color: #2096c5;
+      transition: ease-in-out .1s;
+  }
+
+  .notes-notes .note-search{
+    margin: 10px;
+    width: 70%;
+    align-self: center;
+    justify-content: center;
+  }

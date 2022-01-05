@@ -1,38 +1,57 @@
 //tool tip for navbar
 
+
 console.log("start")
-const menu = document.querySelectorAll('.list-item')
+const menu = Array.from(document.querySelector('.nav-list-items').
+                  getElementsByTagName("li"))
+console.log(typeof menu, {menu});
+Array.from(menu).forEach(menuItem=>{
+  tipText = menuItem.getAttribute("tip").toString().trim()
+  const tooltip = document.createElement('div')
+  tooltip.id=`tooltip-${tipText}`;
+  tooltip.innerHTML = tipText;
+  tooltip.style = `
+               font-famly: "Poppins", san-serif;
+               font-size: 13px;
+               font-weight: 600;
+               font-style: bold;
+               letter-spacing: 1px;
+               position: absolute;
+               display: none;
+               padding: 5px; 
+               background-color:rgba(0, 0, 0, 0.8); 
+               color: white;
+               border: 1px rgba(0, 0, 0, 0.12) solid;
+               border-radius: 3px;
+               z-index: 1009;
+               `;
+  menuItem.appendChild(tooltip)
+})
 
 menu.forEach(menuItem=>{
-
-  menuItem.addEventListener('mouseenter', (ev) => {
-
-      const tooltip = document.createElement('div', { className: "#tooltip" });
-      tooltip.innerHTML = menuItem.getAttribute("tip");
-      tooltip.style = `all: unset;
-                   font-famly: "Poppins", san-serif;
-                   position: absolute;
-                   display: block;
-                   padding: 5px; 
-                   background-color:rgba(0, 0, 0, 0.8); 
-                   color: white;
-                   border: 1px rgba(0, 0, 0, 0.12) solid;
-                   border-radius: 3px;
-                   z-index: 1009;
-                   `;
-      menuItem.appendChild(tooltip)
-      console.log('imple');
-    })
-  menuItem.addEventListener('mouseleave', (ev)=>{
-    menuItem.removeChild()
-
+  tipText = menuItem.getAttribute("tip").trim()
+  const tooltip = document.getElementById(`tooltip-${tipText}`);
+  console.log(tooltip)
+  menuItem.addEventListener('mouseenter', (ev) =>{
+    tooltip.style.display = "list-item"
   }
+      )
+  menuItem.addEventListener('mouseleave', (ev)=>tooltip.style.display = "none")
+}
 );
 
+
+//setting background for notes
+
+for(let noteDiv of document.querySelectorAll(".notes")){
+  let images = []
+  noteDiv.style;
+}
 
 //ordering notes
 
 const subjects = {
+  all: "All Notes",
   CSC: "Computer Science",
   Math: "Mathematics",
   Fmath: "Further Mathematics",
@@ -40,9 +59,43 @@ const subjects = {
   Chem: "Chemistry",
   Phy: "Physics",
   Bio: "Biology"
+};
+
+
+const searchNotesButton = document.querySelector('.note-search');
+const searchNotes = document.getElementById("search-notes")
+
+for(let subjectTag of Object.keys(subjects)){
+  const option = document.createElement('option')
+  option.value = subjectTag
+  option.innerHTML = subjects[subjectTag]
+  searchNotes.appendChild(option)
 }
 
 
-const searchNotesButton = document.querySelector('search-notes');
+searchNotesButton.addEventListener('click', (ev)=>{
+  let chosenSubject = searchNotes.value
+  if(!Object.keys(subjects).includes(chosenSubject)) return
 
+
+  //select the divs that have #chosensubject and display them
+  const notesLibrary = document.querySelector(".lib-notes").getElementsByClassName("notes")
+  for(let note of Array.from(notesLibrary)){
+    subject = note.getAttribute("subject")
+    if(!(subject == chosenSubject) && chosenSubject != "all"){
+      note.style.display = "none";
+    }
+    else if(note.style.display === "none"){
+      note.style.display = "flex";
+  }
+}
+})
+
+
+//odering videos
+
+//ordering solutions to past questions
+
+
+//
 
