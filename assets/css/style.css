@@ -46,6 +46,7 @@ ul{
     position: sticky;
     top: 0;
     min-width: 100%;
+    max-width: 100%;
     z-index: 999;
     background-color: rgb(252, 252, 252, .95);
     border-bottom: rgba(27, 82, 114, 0.5);
@@ -60,14 +61,28 @@ ul{
     padding-top: 20px;
 }
 
+@keyframes changecolor{
+    from{
+        color: rgba(0, 0, 0, 0.2);
+    }
+    to{
+        color: rgba(3, 38, 61, 0.8)
+    }
+}
+
+
 .logo h1{
     font-size: 3em;
     line-height: 1;
     font-weight: 800;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    font-style: bold;
-    text-shadow: 2px 1px 5px white; 
+    font-style: bold; 
+    clip-path: text;
+}
+
+.logo:hover{
+    animation: changecolor 4s infinite;
 }
 
 .navbar{
@@ -81,9 +96,10 @@ ul{
 }
 
 .nav-list-items{
+    width: 90%;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -102,7 +118,6 @@ ul{
     transition: 0.3s;
     color: initial !important;
     text-decoration: none !important; 
-    padding: 4px;
 }
 
 .nav-list-items > .active-list-item a, .nav-list-items > .list-item:hover a{
@@ -117,7 +132,7 @@ ul{
 /** ====Media queries for small screen ******/
 
 /**small laptops and tablets**/
-@media screen and (max-width: 1180px){
+@media screen and (max-width: 1100px){
 
     #header{
         display: flex;
@@ -174,11 +189,41 @@ ul{
                 The Intro
 ***********************************************/
 
+@keyframes updateBg{
+    0%{
+        background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) )
+        ,url(../img/general/about-3.JPG) center no-repeat;  
+        background-size:cover;
+    }
+    25%{
+        background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) )
+        ,url(../img/general/about-6.JPG) center no-repeat; 
+        background-size:cover;   
+    }
+    50%{
+        background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) )
+        ,url(../img/general/about-nm.JPG) center no-repeat; 
+        background-size:cover; 
+    }
+    75%{
+        background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) )
+        ,url(../img/general/about-5.JPG) center no-repeat;
+        background-size:cover;  
+    }
+    100%{
+        background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) )
+        ,url(../img/general/about-2.jpg) center no-repeat; 
+        background-size:cover; 
+    }
+}
+
 .intro{
     font-family: 'Roboto';
     background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) )
-                ,url(../img/about.jpg) center no-repeat;
+                ,url(../img/general/about.jpg) center no-repeat;
 	background-size:cover;
+    transition: ease-in-out 400ms;
+    animation: updateBg 12s infinite linear;
     background-blend-mode: darken;
     min-height: 800px;
     display: flex;
@@ -270,7 +315,7 @@ ul{
     padding: 15px;
     background-color: rgba(0, 0, 0, .2);
     border-radius : 10px;
-    width: 90%;
+    margin: auto;
 }
 
 .newsletter input[type="email"]{
@@ -595,7 +640,7 @@ ul{
 ************************************/
 
 .library-info{
-    margin: 20px;
+    margin: auto;
     border-radius: 25%;
     width: 90%;
     color:rgba(0, 0, 0, 0.8);
@@ -699,7 +744,7 @@ ul{
   }
 
 .notes > .actions-bar{
-    
+
     position: absolute;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.9);
@@ -710,6 +755,7 @@ ul{
 }
 
   .notes > .actions-bar i{
+     
     font-size: 40px;
     color: rgba(255, 255, 255, .8);
   }
