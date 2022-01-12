@@ -78,12 +78,8 @@ ul{
     letter-spacing: 0.5px;
     text-transform: uppercase;
     font-style: bold; 
-    clip-path: text;
 }
 
-.logo:hover{
-    animation: changecolor 4s infinite;
-}
 
 .navbar{
    margin: 0;
@@ -219,24 +215,28 @@ ul{
 
 .intro{
     font-family: 'Roboto';
-    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) )
+    background:linear-gradient( rgba(1, 225, 255, 0.1), rgba(4, 0, 255, 0.1) )
                 ,url(../img/general/about.jpg) center no-repeat;
 	background-size:cover;
     transition: ease-in-out 400ms;
     animation: updateBg 12s infinite linear;
-    background-blend-mode: darken;
+    background-blend-mode: overlay;
     min-height: 800px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
 
+
 .intro-text{
     width : 60%;
     text-align: center;
     text-justify: center;
+    margin: auto;
     color: white;
+    z-index: 20;
 }
 .intro-text h1{
     font-weight: 800;
