@@ -7,9 +7,11 @@ $(window).on('load', function(){
 });
 function removeLoader(){
     $( "#loader" ).fadeOut("slow", function() {
-      $( "#loader" ).hide()
+      $( "#loader" ).remove()
   });  
 }
+
+//window.addEventListener('load', )
 
 
 //tool tip for navbar
