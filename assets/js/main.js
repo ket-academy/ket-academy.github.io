@@ -11,7 +11,9 @@ function removeLoader(){
   });  
 }
 
-//window.addEventListener('load', )
+/* window.addEventListener('load', (ev)=>{
+  document.querySelector("#loader").style.display = "none";
+}) */
 
 
 //tool tip for navbar
