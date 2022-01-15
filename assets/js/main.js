@@ -1,30 +1,29 @@
+//test
+console.log("DEBUG:-$")
+
+//ono load show this
+$(window).on('load', function(){
+  setTimeout(removeLoader, 1000); //wait for page load PLUS two seconds.
+});
+function removeLoader(){
+    $( "#loader" ).fadeOut("slow", function() {
+      $( "#loader" ).hide()
+  });  
+}
+
+
 //tool tip for navbar
 
 
-console.log("start")
 const menu = Array.from(document.querySelector('.nav-list-items').
                   getElementsByTagName("li"))
-console.log(typeof menu, {menu});
+
 Array.from(menu).forEach(menuItem=>{
   tipText = menuItem.getAttribute("tip").toString().trim()
   const tooltip = document.createElement('div')
   tooltip.id=`tooltip-${tipText}`;
   tooltip.innerHTML = tipText;
-  tooltip.style = `
-               font-famly: "Poppins", san-serif;
-               font-size: 13px;
-               font-weight: 600;
-               font-style: bold;
-               letter-spacing: 1px;
-               position: absolute;
-               display: none;
-               padding: 5px; 
-               background-color:rgba(0, 0, 0, 0.8); 
-               color: white;
-               border: 1px rgba(0, 0, 0, 0.12) solid;
-               border-radius: 3px;
-               z-index: 1009;
-               `;
+  tooltip.classList.add('tool-tip')
   menuItem.appendChild(tooltip)
 })
 
@@ -41,17 +40,17 @@ menu.forEach(menuItem=>{
 );
 
 
-//setting background for notes
 
-for(let noteDiv of document.querySelectorAll(".notes")){
-  let images = []
-  noteDiv.style;
-}
 
-//ordering notes
+
+/*********HANDLING LOADING OF MATERIALS***********/
+
+
+
+//subjects
 
 const subjects = {
-  all: "All Notes",
+  all: "All Subjects",
   CSC: "Computer Science",
   Math: "Mathematics",
   Fmath: "Further Mathematics",
@@ -61,20 +60,57 @@ const subjects = {
   Bio: "Biology",
 };
 
+//collect search buttons and populate the select element
 
-const searchNotesButton = document.querySelector('.note-search');
-const searchNotes = document.getElementById("search-notes")
+const searchItemButton= document.querySelectorAll('.search-item');
+const selectItem = document.querySelectorAll(".select-subject")
+
+console.log({searchItemButton:searchItemButton, selectItem:selectItem})
 
 for(let subjectTag of Object.keys(subjects)){
-  const option = document.createElement('option')
-  option.value = subjectTag
-  option.innerHTML = subjects[subjectTag]
-  searchNotes.appendChild(option)
+  Array.from(selectItem).forEach(one=>{
+    const option = document.createElement('option')
+    option.value = subjectTag
+    option.innerHTML = subjects[subjectTag]
+    one.appendChild(option)
+  })
 }
 
 
-searchNotesButton.addEventListener('click', (ev)=>{
-  let chosenSubject = searchNotes.value
+
+var dataFile = "../../data/notesInfoBank.json"
+searchItemButton[0].addEventListener('click', (ev)=>{
+  $('.notes').slideUp(1000)
+  $('.notes').slideDown(1000)
+  
+  fetch(dataFile).then(response => response.json()).then(json => {
+   
+    console.log({"Using Fetch":json})
+  }) 
+
+  $(function(){
+    $.getJSON(dataFile,function(data)
+    {console.log({"Using JQuery": data})});
+ })();
+
+
+ 
+})
+
+
+types= "videos, notes, past questions, answers to questions"
+classNames = [".lib-notes", ".lib-vieos", ".lib-answers", ".lib-pastquestions"]
+
+let loadDataToUI = function(subjectTag, classNames, type){
+  if(!Object.keys(subjects).includes(chosenSubject)) return
+}
+
+/*  
+
+
+
+searchItemButton.addEventListener('click', (ev)=>{
+  let chosenSubject = selectItem.value
   if(!Object.keys(subjects).includes(chosenSubject)) return
 
 
@@ -89,7 +125,7 @@ searchNotesButton.addEventListener('click', (ev)=>{
       note.style.display = "flex";
   }
 }
-})
+}) */
 
 
 //odering videos
@@ -101,6 +137,16 @@ searchNotesButton.addEventListener('click', (ev)=>{
 
 
 /*================Extracting info from JSON database==========*/
+/*
+var dataFile = "../../data/notesInfoBank.json"
+
+let libraryData = null
+
+let notesData = "hello"
+    videoData = "jolo",
+    answersData = "ko",
+    pastQuestionsData = "jj";
+
 
 $.getJSON("https://bioinfobot.github.io/data/2017-05.json")
 .done(function( data ) {
@@ -124,3 +170,4 @@ fetch('https://bioinfobot.github.io/data/2017-05.json')
     {console.log(data)});
  })();
 
+*/
