@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="KET Academy Website">
-    <meta name="keywords" content="KET Academy, Education, Onine">
+    <meta name="keywords" content="KET Academy, Education, Online">
     <meta name= "author" content="KET Acdemy">
 
     <!--Favicon-->
@@ -14,8 +14,9 @@
 
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!--MAIN template CSS File-->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -48,26 +49,35 @@
     <!-- =======Navigation Bar=============== -->
 
     <header id="header" class="header">
-         <!--name and logo-->
-           <!-- <img class = "logo" src="./assets/img/ket-logo-fixed.png" alt="KET Acdemy LOgo"> -->
-        <div class="logo">
-            <h1 >KET <span></span>ACADEMY</span></h1> 
-        </div>
-        
 
-        <!--Nav bar list items-->
-        <nav class="navbar">
-            <ul class="nav-list-items">
-                <li class="list-item active-list-item" tip="HOME"><a href="./index.html">🏡</a></li>
-                <li class="list-item"  tip="ABOUT"><a href="./about.html">📋</a></li>
-                <li class="list-item"  tip="SERVICES"><a href="./services.html">🗼</a></li>
-                <li class="list-item"  tip="TEAM|AMBASSADORS"><a href="./team.html">🤼‍♀️</a></li>
-                <li class="list-item"  tip="LIBRARY" ><a href="./library.html">📚</a></li>
-                <li class="list-item"  tip="TESTIMONIALS"><a href="./testimonials.html">🎤</a></li>
-                <li class="list-item"  tip="CONTACT"><a href="./contact.html">📞</a></li>
-            </ul>
-            <!--<i class="bu bi-list"></i> -->
-        </nav>
+        <div class="container">
+            <!--name and logo-->
+            <!-- <img class = "logo" src="./assets/img/ket-logo-fixed.png" alt="KET Acdemy LOgo"> -->
+            <h1 class="logo "><a href="index.html"><span>KET </span>ACADEMY</a></h1>
+            <!--Nav bar list items-->
+            <nav class="navbar mobile-nav">
+                <ul class="nav-list-items">
+                    <li class="list-item active-list-item" tip="HOME"><a href="./index.html">🏡Home</a></li>
+                    <li class="list-item"  tip="ABOUT"><a href="./about.html">📋About</a></li>
+                    <li class="list-item"  tip="SERVICES"><a href="./services.html">🗼Serivces</a></li>
+                    <li class="list-item"  tip="TEAM|AMBASSADORS"><a href="./team.html">🤼‍♀️Team</a></li>
+                    <li class="list-item"  tip="LIBRARY" ><a href="./library.html">📚Library</a></li>
+                    <li class="list-item"  tip="TESTIMONIALS"><a href="./testimonials.html">🎤Testimonials</a></li>
+                    <li class="list-item"  tip="CONTACT"><a href="./contact.html">📞Contact</a></li>
+                </ul>
+                <!--<i class="bu bi-list"></i> -->
+            </nav>
+            
+            <div class="media-links-head">
+                <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bu bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
+                <a href="#" class="youtube"><i class="bu bi-youtube"></i></i></a>
+            </div>  
+
+            <i class="bu bi-list mobile-menu-toggle"></i>
+        </div>
     </header>
     
     <!-- =========== Introduction section: carousel-->
@@ -82,6 +92,8 @@
             </p>
         </div>
     </section>
+
+    section#
 
     <!-- =========Footer============ -->
     <footer class="footer" id="footer">
@@ -102,20 +114,20 @@
             <div class="footer-list">
                 <h4>Useful Links 🧭</h4>
                 <ul class="footer-list-items">
-                    <li class="list-item active"></i> <a href="./index.html"><i class="bu bi-link"></i> Home</a></li>
-                    <li class="list-item"><a href="./about.html"><i class="bu bi-link"></i> About</a></li>
-                    <li class="list-item"><a href="./services.html"><i class="bu bi-link"></i> Services</a></li>
-                    <li class="list-item"><a href="./team.html"><i class="bu bi-link"></i> Team|Ambassadors</a></li>
-                    <li class="list-item"><a href="./library.html"><i class="bu bi-link"></i> Library</a></li>
-                    <li class="list-item"><a href="./testimonials.html"><i class="bu bi-link"></i> Testimonials</a></li>
-                    <li class="list-item"><a href="./contact.html"><i class="bu bi-link"></i> Contact</a></li>
+                    <li class="list-item active"><i class="bu bi-link"></i> <a href="./index.html"> Home</a>
+                    <li class="list-item"><i class="bu bi-link"></i> <a href="./about.html"> About</a></li>
+                    <li class="list-item"><i class="bu bi-link"></i> <a href="./services.html"></i> Services</a></li>
+                    <li class="list-item"><i class="bu bi-link"></i> <a href="./team.html"> Team|Ambassadors</a></li>
+                    <li class="list-item"><i class="bu bi-link"></i> <a href="./library.html"> Library</a></li>
+                    <li class="list-item"><i class="bu bi-link"></i> <a href="./testimonials.html"> Testimonials</a></li>
+                    <li class="list-item"><i class="bu bi-link"></i> <a href="./contact.html"> Contact</a></li>
                 </ul>
             </div>
             
             <div class="newsletter">
                 <h4>Join Our Newsletter 🔥</h4>
                     <p>Get frequent updates on opportunities and study material</p>
-                <form class= "needs-validation" action="submit" method="post">
+                <form class= "needs-validation d-flex" action="submit" method="post">
                     <input type="email" placeholder=" Enter Email..." id="email" required>
                     <input class="btn btn-primary" type="submit" value="🚀Sign Up">
                 </form>
@@ -138,6 +150,9 @@
           
         </div>
     </footer>
+    <div id="back-to-top">
+        <a href="#"><i class="bu bi-arrow-up-circle-fill"></i></a>
+    </div>
 </body>
 
 

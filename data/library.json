@@ -1,0 +1,79 @@
+{
+    "notes": {
+        "n1": {
+            "subjectTag": "CSC",
+            "title": "Algorithms and Data Structures",
+            "linkToContent": 
+            "https://www.programmingexpert.io",
+            "description": 
+            "Notes on Algorithmns and data Structures covering the entire advanced level syllabus requirement plus numerous illustrations and examples to ease understanding and multiple exercises to enhace study experience."
+        },
+        "n2": {
+            "subjectTag": "Math",
+            "title": "Trigonometry 1",
+            "linkToContent": "",
+            "description": 
+            ""
+        },
+        "n3": {
+            "subjectTag": "Fmath",
+            "title": "Moment of Inertia",
+            "linkToContent": "",
+            "description": ""
+        },
+        "n4": {
+            "subjectTag": "Fmath",
+            "title": "Moment of Inertia",
+            "linkToContent": "",
+            "description": ""
+        }
+    },
+
+
+    "videos": {
+        "v1": {
+            "subjectTag": "Math",
+            "title": "Trigonometry 1",
+            "linkToContent": "",
+            "description": "Explanation of the first part of trginimrty comprising simple functions"
+        }
+    },
+
+
+    "answers": {
+        "a1": {
+            "subjectTag": "CSC",
+            "title": "Trigonometry 1",
+            "linkToContent": "",
+            "description": ""
+        },
+        "a2": {
+            "subjectTag": "Math",
+            "title": "Trigonometry 1",
+            "linkToContent": "",
+            "description": ""
+        },
+        "a3": {
+            "subjectTag": "Math",
+            "title": "Trigonometry 1",
+            "linkToContent": "",
+            "description": ""
+        }
+    },
+
+
+    "questions": {
+        "q1": {
+            "subjectTag": "CSC",
+            "title": "GCE CSC 2020 Paper 2",
+            "linkToContent": "",
+            "description": ""
+        },
+        "q2": {
+            "subjectTag": "Math",
+            "title": "GCE Math 2021 Paper 3",
+            "linkToContent": "",
+            "description": ""
+        }
+    }
+}
