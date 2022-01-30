@@ -311,6 +311,9 @@ ul{
     .media-links-head{
         display: none !important;
     }
+    .intro-text{
+        width : 80%;
+    }
 }
 
 
@@ -375,15 +378,11 @@ ul{
 }
 .intro-text h1{
     font-weight: 800;
-    font-size: 3em;
+    font-size: 2.8em;
     font-style: bold;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
     text-shadow: 2px 1px 5px black;
-}
-.intro-text span{
-    border-top: rgba(37, 30, 30, 0.6);
-    border-width: 10px;
 }
 
 .intro-text p{
