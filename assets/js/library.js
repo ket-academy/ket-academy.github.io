@@ -26,7 +26,7 @@ const subjects = {
     const dataProps = {"notes":["lib-notes", "assets/img/library/book-5.jpeg"],
     "answers":["lib-answers", "assets/img/library/book-note-f.jpg"],
     "videos":["lib-videos", null],
-    "questions":["lib-pastquestions", "assets/img/library/booky-2.jfif"]
+    "questions":["lib-pastquestions", "assets/img/library/booky2.jfif"]
    }
   
   

@@ -31,17 +31,22 @@ $(window).on('scroll', (ev)=>{
 //mobile nav
 
 const mobileNavButton = document.querySelector('.mobile-menu-toggle')
-const mobileMenu = document.querySelector('.navbar')
+const mobileMenu = document.querySelector('.navbar.mobile-nav')
+
 mobileNavButton.onclick  = ()=>{
-  if(mobileMenu.style.display === 'none')
+  if(mobileMenu.style.display != 'none' && mobileMenu.style.display)
   {
-    mobileMenu.style.display = 'flex'
-    mobileNavButton.classList.add('bi-x')
-    mobileNavButton.classList.remove('bi-list')
-  }else{
+
     mobileMenu.style.display = 'none'
     mobileNavButton.classList.add('bi-list')
     mobileNavButton.classList.remove('bi-x')
+
+  
+  }else{
+    mobileMenu.style.display = 'flex'
+    mobileNavButton.classList.add('bi-x')
+    mobileNavButton.classList.remove('bi-list')
+    
   }
 }
 
@@ -68,5 +73,62 @@ menu.forEach(menuItem=>{
   menuItem.addEventListener('mouseleave', (ev)=>tooltip.style.display = "none")
 }
 );
+
+
+//carousel
+
+let images = document.getElementsByClassName('carousel');
+
+
+// (function (){
+//   if(!images)
+//     return
+//   let activeImage = images[0]
+//   let imgIndex = 0;
+//   function activateCarousel(){
+//     activeImage.style.zIndex = 9
+//     activeImage.style.transform = 'translateX(100%)'
+//     activeImage.style.zIndex = -349
+//     activeImage.style.transform = 'translateX(0)'
+//     imgIndex = (imgIndex+1)%images.length
+//     activeImage = images [imgIndex]
+//     console.log('hello--',imgIndex)
+//   }
+//   setInterval(activateCarousel, 2000);
+// }
+// )()
+
+
+//faq section
+
+const faqItems = document.querySelectorAll(".faq-list li")
+
+
+function showHide(faq){
+
+  const para = faq.getElementsByTagName('div')[0]
+  const icon = faq.getElementsByClassName('icon-show-hide')[0]
+  
+  if(para.style.display != 'none'){//if showing
+    icon.classList.add('bi-caret-down-fill')
+    icon.classList.remove('bi-caret-up-fill')
+    para.style.display = "none"
+    faq.classList.remove('faq-active')
+  }
+  else{
+    icon.classList.add('bi-caret-up-fill')
+    icon.classList.remove('bi-caret-down-fill')
+    para.style.display = "block"
+    faq.classList.remove('.faq-active') 
+  }
+}
+(function(){
+  if(!faqItems) return
+
+  for(let faq of faqItems){
+    faq.onclick = (ev)=>showHide(faq)
+  }
+}
+)()
 
 

@@ -55,7 +55,23 @@
             <!-- <img class = "logo" src="./assets/img/ket-logo-fixed.png" alt="KET Acdemy LOgo"> -->
             <h1 class="logo "><a href="index.html"><span>KET </span>ACADEMY</a></h1>
             <!--Nav bar list items-->
-            <nav class="navbar mobile-nav">
+            <nav class="navbar">
+                <ul class="nav-list-items">
+                    <li class="list-item active-list-item" tip="HOME"><a href="./index.html">🏡Home</a></li>
+                    <li class="list-item"  tip="ABOUT"><a href="./about.html">📋About</a></li>
+                    <li class="list-item"  tip="SERVICES"><a href="./services.html">🗼Serivces</a></li>
+                    <li class="list-item"  tip="TEAM|AMBASSADORS"><a href="./team.html">🤼‍♀️Team</a></li>
+                    <li class="list-item"  tip="LIBRARY" ><a href="./library.html">📚Library</a></li>
+                    <li class="list-item"  tip="TESTIMONIALS"><a href="./testimonials.html">🎤Testimonials</a></li>
+                    <li class="list-item"  tip="CONTACT"><a href="./contact.html">📞Contact</a></li>
+                </ul>
+                <!--<i class="bu bi-list"></i> -->
+            </nav>
+
+            <!--nav for mobie. Had to create this incase one 
+            mini/maximises their browser window
+            -->
+            <nav class="navbar mobile-nav" style="display: none">
                 <ul class="nav-list-items">
                     <li class="list-item active-list-item" tip="HOME"><a href="./index.html">🏡Home</a></li>
                     <li class="list-item"  tip="ABOUT"><a href="./about.html">📋About</a></li>
@@ -81,25 +97,208 @@
     </header>
     
     <!-- =========== Introduction section: carousel-->
-    <section class="intro" id="intro">
-       
-        <div class="intro-text">
-            <h1>Welcome to <span>KET</span> Academy</h1>
-            <br>
-            <p>
-                📚Providing  educational access and
-                 assistance for amelioration to all.📝
-            </p>
-        </div>
-    </section>
 
-    section#
+    <main>
+        <section class="intro" id="intro">
+            <img src="./assets/img/carousel/about-2.JPG" alt="" class="carousel">
+            <img src="./assets/img/carousel/about-3.JPG" alt="" class="carousel">
+            <img src="./assets/img/carousel/about-3.JPG" alt="" class="carousel">
+            <img src="./assets/img/carousel/about-4.JPG" alt="" class="carousel">
+            <img src="./assets/img/carousel/about-5.JPG" alt="" class="carousel">
+            <div class="intro-text">
+                <h1>Welcome to <span>KET</span> Academy</h1>
+                <br>
+                <p>
+                    📚Providing  educational access and
+                     assistance for amelioration to all.📝
+                </p>
+            </div>
+        </section>
+
+        <section class="mentor-call">
+            <div class="container">
+                <div class="text-center">
+                  <h3>Call To Action</h3>
+                  <p> 
+                    Are you a highly motivated person who deeply cares about the 
+                    development of our commmuinity especially in the educational sphere?
+                    Do you have some skills and knowledge you wish to pass on to others?
+                    Do you want to join a community of purpose minded people aiming at making
+                    our society a better place?
+
+                    Consider becoming an ambassador of KET academy.
+                    </p>
+                  <a class="call-button" href="#">Become An Ambassador</a>
+                </div>
+        
+            </div>
+        </section>
+
+        <section class="media-presence">
+            <div class="container">
+                <h3>Be Part of Our Online Presence.</h3>
+                <p>Join our various online forums to learn more about us, get access to our servives and
+                    get in contact with our esteemed ambassadors.
+                </p>
+            </div>
+            <div class="media">
+                <div>
+                    <img src="" alt="">
+                    <p>Join Our Telegram Chanell</p>
+                </div>
+                <div>
+                    <p>Join Our Whatsapp Groups</p>
+                </div>
+                <div>
+                    <p>Join our Facebook Page</p>
+                </div>
+                <div>
+                    <p>Follow Us on twitter</p>
+                </div>
+                <div>
+                    <p>Check out our Youtube Chanell</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section"> 
+            <div class="container">
+            
+                <div class="faq-title">
+                    <h2>Frequently Asked Questions [FAQ]</h2>
+                    <p>These are questions other people have asked about us. In case you dont get an answer to your
+                        question, <a href="./contact.html">send us a message</a>
+                    </p>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+                        <!--Question 1-->
+                        <li  class="faq-active">
+                                <i class="bu bi-question-circle-fill icon-help"></i> 
+                                <a>What is Ket Academy</a>
+                                <i class="bu bi-caret-up-fill icon-show-hide"></i>
+                            
+                            <div style="display: block">
+                                <p>
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                </p>
+                            </div>
+                        </li>
+                        <!--Question 2-->
+                        <li>
+                            <i class="bu bi-question-circle-fill icon-help"></i> <a>What is Ket Academy </a><i class="bu bi-caret-down-fill icon-show-hide"></i>
+                            <div style="display: none">
+                                <p>
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                </p>
+                            </div>
+                        </li>
+                        <!--Question 3-->
+                        <li>
+                            <i class="bu bi-question-circle-fill icon-help"></i> <a>What is Ket Academy </a><i class="bu bi-caret-down-fill icon-show-hide"></i>
+                            <div style="display: none">
+                                <p>
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                </p>
+                            </div>
+                        </li>
+                        <!--Question 4-->
+                        <li>
+                            <i class="bu bi-question-circle-fill icon-help"></i> <a>What is Ket Academy</a><i class="bu bi-caret-down-fill icon-show-hide"></i>
+                            <div style="display: none">
+                                <p>
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                </p>
+                            </div>
+                        </li>
+                        <!--Question 5-->
+                        <li>
+                            <i class="bu bi-question-circle-fill icon-help"></i> <a>What is Ket Academy</a><i class="bu bi-caret-down-fill icon-show-hide"></i>
+                            <div style="display: none">
+                                <p>
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                </p>
+                            </div>
+                        </li>
+                        <!--Question 6-->
+                        <li>
+                            <i class="bu bi-question-circle-fill icon-help"></i> <a>What is Ket Academy</a><i class="bu bi-caret-down-fill icon-show-hide"></i>
+                            <div style="display: none">
+                                <p>
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                </p>
+                            </div>
+                        </li>
+                        <!--Question 7-->
+                        <li>
+                            <i class="bu bi-question-circle-fill icon-help"></i> 
+                            <a>
+                                Lorem ipsum, consequuntur a eligendi, repudiandae soluta perspiciatis similique enim unde vitae quasi.
+                            </a>
+                            <i class="bu bi-caret-down-fill icon-show-hide"></i>
+                            <div style="display: none">
+                                <p>
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                </p>
+                            </div>
+                        </li>
+                    
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="reports">
+            <div class="container">
+                <h2>Report a Learning Difficulty</h2>
+                <p>KET academy is dedicated to helping students in 
+                    all aspects of their education. If you have have any difficukty
+                    or challenge of any sort with your studies or know someone who does,
+                    kindly send us a message to look into it. 
+                    
+                    <br>
+                    <a href="./contact.html#contact-form">Report a challenge</a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>Suggest a lesson or teaching approch</h2>
+                <p>We at KET academy try our best to provide the most optimal academic
+                    assistance and solutions. If you are also passionate about promoting
+                    and improving education in Cameroon, you might have some cool ideas that will
+                    enable us render better educational services to academia.
+
+                    <br>
+                    <a href="./contact.html#contact-form">Send us your Suggestion</a>
+
+                </p>
+            </div>
+            <div class="container">
+                <h2>Leave a testimonial</h2>
+
+                <p>
+                    The testimonies and reviews of students give us hope to continue 
+                    and make us shine brighter in our domain to attract more aid that will
+                    enable us serve the educational commmunity better.
+                    Have you benefitted from the activiries or material or KET acdemy and 
+                    her ambassadors?
+                    <br>
+                    <a href="./contact.html#contact-form">Leave Us Your Experience</a>
+
+                </p>
+            </div>
+        </section>
+
+    </main>
+    
+
 
     <!-- =========Footer============ -->
     <footer class="footer" id="footer">
         <div class="footer-items">
             <div class="address">
-                <h4>KET Academy <i class="bi bi-geo-alt-fill"> </i></h4>
+                <h4>KET Academy <span id="blued"> <i class="bi bi-geo-alt-fill"> </span></i></h4>
                 <span>
                 <p>Chappelle Obili, <br>
                    8687 Yaounde, <br>
@@ -112,7 +311,7 @@
                 </p>
             </div>
             <div class="footer-list">
-                <h4>Useful Links 🧭</h4>
+                <h4>Useful Links <span id="blued">🧭</span></h4>
                 <ul class="footer-list-items">
                     <li class="list-item active"><i class="bu bi-link"></i> <a href="./index.html"> Home</a>
                     <li class="list-item"><i class="bu bi-link"></i> <a href="./about.html"> About</a></li>
@@ -125,11 +324,11 @@
             </div>
             
             <div class="newsletter">
-                <h4>Join Our Newsletter 🔥</h4>
+                <h4>Join Our Newsletter <span id="blued">🔥</span></h4>
                     <p>Get frequent updates on opportunities and study material</p>
                 <form class= "needs-validation d-flex" action="submit" method="post">
                     <input type="email" placeholder=" Enter Email..." id="email" required>
-                    <input class="btn btn-primary" type="submit" value="🚀Sign Up">
+                    <input class="btn btn-primary" type="submit" value="🚀Subscribe">
                 </form>
             </div>
         </div>
