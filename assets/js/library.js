@@ -16,6 +16,10 @@ const subjects = {
     Chem: "Chemistry",
     Phy: "Physics",
     Bio: "Biology",
+    Econs: "Economics",
+    Geo: "Geography",
+    Geolog: "Geology",
+    His:"History"
   };
   
   
@@ -45,7 +49,7 @@ const subjects = {
   
       const element = document.createElement("iframe")
       element.classList.add('vid-videos')
-      element.src =href //put source
+      element.src = href //put source
   
       const titre = document.createElement('p')
       titre.innerHTML = `<b>${title}</b> : ${description}`

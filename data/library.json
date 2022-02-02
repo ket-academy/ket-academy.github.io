@@ -1,31 +1,236 @@
 {
     "notes": {
         "n1": {
-            "subjectTag": "CSC",
-            "title": "Algorithms and Data Structures",
+            "subjectTag": "Math",
+            "title": "Sequences and Series",
             "linkToContent": 
-            "https://www.programmingexpert.io",
+            "https://drive.google.com/file/d/1g6hvoLb5Y47D-RGkSnB7QLJ9VbLOxrzZ/view?usp=sharing",
             "description": 
-            "Notes on Algorithmns and data Structures covering the entire advanced level syllabus requirement plus numerous illustrations and examples to ease understanding and multiple exercises to enhace study experience."
+            "Detailed break-down on sequences and series in Math mostly geared towards further math students. Numerous illustrations and exercises to enhance understaning of study material and for practice."
         },
         "n2": {
-            "subjectTag": "Math",
-            "title": "Trigonometry 1",
+            "subjectTag": "CSC",
+            "title": "Algorithmns and Data Structures",
             "linkToContent": "",
             "description": 
-            ""
+            "Notes on Algorithmns and data Structures covering the entire advanced level syllabus requirement plus numerous illustrations and examples to ease understanding and multiple exercises to enhace study experience."
+
         },
         "n3": {
-            "subjectTag": "Fmath",
-            "title": "Moment of Inertia",
-            "linkToContent": "",
-            "description": ""
+            "subjectTag": "Math",
+            "title": "Mathematical Induction",
+            "linkToContent": "https://drive.google.com/file/d/1WAVHN4Kt-Sw-nM2RgVVN-mObv5Mv02Mm/view?usp=sharing",
+            "description": 
+            "Indepth notes on proving by mathematical induction. Ideal for Math and Further math students with examples, illustrations and exercises for practise."
         },
         "n4": {
+            "subjectTag": "Phy",
+            "title": "Data Analysis",
+            "linkToContent": 
+            "https://drive.google.com/file/d/18Kh2943YCqqEuzGbVajfqdDwiwBjtfT_/view?usp=sharing",
+            "description": 
+            "Notes on data analysis to guide in answering the corresponding question in GCE paper. Also useful to apply in other subjects. "
+        },
+        "n5": {
+            "subjectTag": "Math",
+            "title": "Mathematical Symbols + Scientific constants and Identities",
+            "linkToContent": 
+            "https://docs.google.com/document/d/1L1bFR757E_NYA-GcbagJ3d7Xfpevh6OE/edit?usp=sharing&ouid=100698981533933226741&rtpof=true&sd=true",
+            "description": 
+            "Well tailored-graph book with standard graph paper for practise and preparations. Mathematical symbols and scientific constants for reference"
+        },
+        "n6": {
             "subjectTag": "Fmath",
-            "title": "Moment of Inertia",
-            "linkToContent": "",
-            "description": ""
+            "title": "Further Differential Equations",
+            "linkToContent": 
+            "https://docs.google.com/document/d/1_5oKmaySRtzP-D0vOL7rXcYPsIkr0U_-/edit?usp=sharing&ouid=100698981533933226741&rtpof=true&sd=true",
+            "description": 
+            "A uniquely simplified explanation of further differential for Further Math-GCE A level applicable to math. Numerous exercises and Illustrations to facilitate understanding and simplify concepts"
+        },
+        "n7": {
+            "subjectTag": "Math",
+            "title": "Graph Book",
+            "linkToContent": 
+            "https://drive.google.com/file/d/1e0pZFzEapQPZUkHMFKTT8_bqBrqSnkLe/view?usp=sharing",
+            "description": 
+            "Standard Graph paper for GCE preparations and practise."
+        },
+       
+        "n8": {
+            "subjectTag": "Math",
+            "title": "Notes and Exercises on Inequalities",
+            "linkToContent": 
+            "https://docs.google.com/document/d/1L1bFR757E_NYA-GcbagJ3d7Xfpevh6OE/edit?usp=sharing&ouid=100698981533933226741&rtpof=true&sd=true",
+            "description": 
+            "Simplified notes on mathematical inequalities with graphical explanations and multiple examples for illustration and exercises for practice"
+        },
+        "n9":{
+            "subjectTag": "Phy",
+            "title": "Kinetic Theory of Gases",
+            "linkToContent": 
+            "https://docs.google.com/document/d/1uvmctLVJPkKklG-eNJF0zmB5lRCJf3zL/edit?usp=sharing&ouid=100698981533933226741&rtpof=true&sd=true",
+            "description":
+            ""
+        },
+        "n10":{
+            "subjectTag": "Phy",
+            "title": "Photoelectric Effect",
+            "linkToContent": 
+            "https://drive.google.com/file/d/1VTYtn1dCVjjxggGnRmoon81kM88d9hYo/view?usp=sharing",
+            "description":
+            ""
+        },
+        "n11":{
+            "subjectTag": "Phy",
+            "title": "Magnetic Fields",
+            "linkToContent": 
+            "https://docs.google.com/document/d/1gVjWnr2Qa_uuGwaP-zji6IBTpEiTGMlp/edit?usp=sharing&ouid=100698981533933226741&rtpof=true&sd=true",
+            "description":
+            ""
+        },
+        "n12":{
+            "subjectTag": "Phy",
+            "title": "Energy Resources",
+            "linkToContent": 
+            "https://drive.google.com/file/d/1VEWdTnFIGjfpNnbVrdLikBvqDp7QjJAx/view?usp=sharing",
+            "description":
+            ""
+        },
+        "n13":{
+            "subjectTag": "Phy",
+            "title": "Projectile Motion",
+            "linkToContent": 
+            "https://drive.google.com/file/d/1hFdBTNQixGuWMK8iNWjxDZKL7xUOSJDe/view?usp=sharing",
+            "description":
+            ""
+        },
+        "n14":{
+            "subjectTag": "Phy",
+            "title": "Radioactivity",
+            "linkToContent": 
+            "https://docs.google.com/document/d/1ZTUZWjSfrkFis81gk3dxOP5xR56s0SNQ/edit?usp=sharing&ouid=100698981533933226741&rtpof=true&sd=true",
+            "description":
+            ""
+        },
+        "n15":{
+            "subjectTag": "CSC",
+            "title": "Algorithmic Complexity",
+            "linkToContent": 
+            "https://drive.google.com/file/d/1lqBt1-5YHx2TPdO_4TZtNRanetKcb05B/view?usp=sharing",
+            "description":
+            ""
+        },
+        "n16":{
+            "subjectTag": "Math",
+            "title": "Binomial Theorem",
+            "linkToContent": 
+            "https://drive.google.com/file/d/1mRIOyIoqPUCFsAHxnHB2gx9-VuTRYkf2/view?usp=sharing",
+            "description":
+            ""
+        },
+        "n17":{
+            "subjectTag": "Math",
+            "title": "Circular Motion",
+            "linkToContent": 
+            "https://drive.google.com/file/d/1-OieTesHgas0YOMklt0MCOMdDsN5GBxq/view?usp=sharing",
+            "description":
+            "Detailed notes. Easy to understand. Simple approach. Explanatory graphics. Applicabe to Physics and Further Maths"
+        },
+        "n18":{
+            "subjectTag": "Phy",
+            "title": "Waves and Radioactivity",
+            "linkToContent": 
+            "https://drive.google.com/file/d/1X2oc16t2mf2PYik0K98vpptg9WdVAsrT/view?usp=sharing",
+            "description":
+            ""
+        },
+        "n19":{
+            "subjectTag": "Phy",
+            "title": "Alternating Circuit Theory",
+            "linkToContent": 
+            "https://drive.google.com/file/d/1PvCKjAJvqXmocKaPGVpfPOZf8nK1kBrd/view?usp=sharing",
+            "description":
+            ""
+        },
+        "n20":{
+            "subjectTag": "",
+            "title": "",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "n21":{
+            "subjectTag": "",
+            "title": "",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "n22":{
+            "subjectTag": "",
+            "title": "",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "n23":{
+            "subjectTag": "",
+            "title": "",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "n24":{
+            "subjectTag": "",
+            "title": "",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "n25":{
+            "subjectTag": "",
+            "title": "",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "n26":{
+            "subjectTag": "",
+            "title": "",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "n27":{
+            "subjectTag": "",
+            "title": "",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "n28":{
+            "subjectTag": "",
+            "title": "",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "n29":{
+            "subjectTag": "",
+            "title": "",
+            "linkToContent": 
+            "",
+            "description":
+            ""
         }
     },
 
@@ -34,46 +239,458 @@
         "v1": {
             "subjectTag": "Math",
             "title": "Trigonometry 1",
-            "linkToContent": "",
+            "linkToContent": "https://www.youtube.com/watch?v=QDHFRmdcrXU",
             "description": "Explanation of the first part of trginimrty comprising simple functions"
+        },
+        "v2":{
+            "subjectTag": "Math",
+            "title":"How to Solve Exact differentail equations",
+            "linkToContent": 
+            "https:https://www.youtube.com/watch?v=q9y_YqzzUnU",
+            "description":
+            "Solution process to exact differentail equations for Math and Further Maths"
+        },
+        "v3":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v4":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v5":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        
+        "v6":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v7":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v8":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v9":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v10":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v11":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v12":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v13":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v14":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v15":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v16":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v17":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v18":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v19":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v20":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v21":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v22":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v23":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v24":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
+        },
+        "v25":{
+            "subjectTag": "",
+            "title":"",
+            "linkToContent": 
+            "",
+            "description":
+            ""
         }
     },
 
 
     "answers": {
         "a1": {
-            "subjectTag": "CSC",
-            "title": "Trigonometry 1",
-            "linkToContent": "",
-            "description": ""
+            "subjectTag": "Math",
+            "title": "Solutions to past questions on sequences and series",
+            "linkToContent": "https://drive.google.com/file/d/1X5XEyjIT3p1l2RMn06YZJtwsu5tRqqJz/view?usp=sharing",
+            "description": "Detailed and clear soltuions to questions on sequences and series for advanced level Mathematics"
         },
+        
         "a2": {
             "subjectTag": "Math",
-            "title": "Trigonometry 1",
-            "linkToContent": "",
-            "description": ""
+            "title": "Solution to exercise on polynomials",
+            "linkToContent": "https://drive.google.com/file/d/1fGRa9y59_TDHZ37Y7m44i27lm8YpwRKx/view?usp=sharing",
+            "description": "A well structured explanation and solution to Polynomial questions"
         },
-        "a3": {
+        "a3":{
             "subjectTag": "Math",
-            "title": "Trigonometry 1",
-            "linkToContent": "",
-            "description": ""
+            "title": "Solutions to Pure Math with Mechanics: June 2020",
+            "linkToContent":
+            "",
+            "description":
+            ""
+        },
+        "a4":{
+            "subjectTag": "Phy",
+            "title": "1000 Solved Problems in Classical Physics",
+            "linkToContent":
+            "https://drive.google.com/file/d/106zR4jRdh-8kH8l8zPTk31ME3w4y_8Vl/view?usp=sharing",
+            "description":
+            "Thrilling Textbook of answers!!"
+        },
+        "a5":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a6":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a7":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a8":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a9":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a10":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a11":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a12":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a13":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a14":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a15":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a16":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a17":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a18":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a19":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a20":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a21":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a22":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a23":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "a24":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
         }
     },
 
-
     "questions": {
         "q1": {
-            "subjectTag": "CSC",
-            "title": "GCE CSC 2020 Paper 2",
-            "linkToContent": "",
-            "description": ""
+            "subjectTag": "Fmath",
+            "title": "Sequences and Series: Past question from 2015-2021",
+            "linkToContent": "https://docs.google.com/document/d/1Mf0_AbeDLFPy6Q1qdoR3XYMDjzshSpEe/edit?usp=sharing&ouid=100698981533933226741&rtpof=true&sd=true",
+            "description": "Past questions on sequnces and series for Further mathematics."
         },
         "q2": {
             "subjectTag": "Math",
-            "title": "GCE Math 2021 Paper 3",
-            "linkToContent": "",
-            "description": ""
+            "title": "Exercises on Centre of Gravity",
+            "linkToContent": 
+            "https://drive.google.com/file/d/1_VUgDLm1iJTOvXei7jtCcOjN5FEQPPVg/view?usp=sharing",
+            "description": 
+            "Multiple choice questions to boost your understanding and challenge your grasp of centre on gravity in mathematics as you study."
+        },
+
+        "q3":{
+            "subjectTag":"Phy",
+            "title":"Multiple Choice Quiz Questions, A-Level Physics",
+            "linkToContent":
+            "https://drive.google.com/file/d/1r1XMqY8g9rhAFD8EQ5BFq39X7HDdDWfk/view?usp=sharing",
+            "description":""
+        },
+        "q4":{
+            "subjectTag":"Phy",
+            "title":"Compilation of Physics Paper 3 questions",
+            "linkToContent":
+            "https://drive.google.com/file/d/1q_i2bd2LhMwFF1h3gjCyx7hc44S9Knp3/view?usp=sharing",
+            "description":""
+        },
+        "q5":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "q6":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "q7":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "q8":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "q9":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "q10":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "q11":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "q12":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "q13":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "q14":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "q15":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
+        },
+        "q16":{
+            "subjectTag":"",
+            "title":"",
+            "linkToContent":"",
+            "description":""
         }
     }
 }
