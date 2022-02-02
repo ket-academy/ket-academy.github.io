@@ -39,8 +39,7 @@ const subjects = {
      
       const title = libraryData['videos'][videoItemId].title,
             subjectTag = libraryData['videos'][videoItemId]["subjectTag"],
-            href = libraryData['videos'][videoItemId]['linkToContent'],
-            description = libraryData['videos'][videoItemId]['description']
+            href = libraryData['videos'][videoItemId]['linkToContent']
   
       const videoContainer = document.createElement('div');
       videoContainer.classList.add('video-item')
@@ -50,9 +49,10 @@ const subjects = {
       const element = document.createElement("iframe")
       element.classList.add('vid-videos')
       element.src = href //put source
+      element.style.border = "2px solid #fff"
   
       const titre = document.createElement('p')
-      titre.innerHTML = `<b>${title}</b> : ${description}`
+      titre.innerHTML = `<b>${title}</b>`
       titre.classList.add('video-desc')
   
       videoContainer.appendChild(element)

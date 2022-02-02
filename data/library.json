@@ -237,202 +237,124 @@
 
     "videos": {
         "v1": {
-            "subjectTag": "Math",
-            "title": "Trigonometry 1",
-            "linkToContent": "https://www.youtube.com/watch?v=QDHFRmdcrXU",
-            "description": "Explanation of the first part of trginimrty comprising simple functions"
+            "subjectTag": "Fmath",
+            "title": "Solving Second Order Differential Equations",
+            "linkToContent": "https://www.youtube.com/embed/czEehPYcXV4"
         },
         "v2":{
             "subjectTag": "Math",
             "title":"How to Solve Exact differentail equations",
             "linkToContent": 
-            "https:https://www.youtube.com/watch?v=q9y_YqzzUnU",
-            "description":
-            "Solution process to exact differentail equations for Math and Further Maths"
+            "https://www.youtube.com/embed/q9y_YqzzUnU"
         },
         "v3":{
-            "subjectTag": "",
-            "title":"",
+            "subjectTag": "ICT",
+            "title":"Complete Spreadsheet Tutorial",
             "linkToContent": 
-            "",
-            "description":
-            ""
+            "https://www.youtube.com/embed/9-gkspvhO8c&t=108s"
+           
         },
         "v4":{
-            "subjectTag": "",
-            "title":"",
+            "subjectTag": "Bio",
+            "title":"Dissection of Fowls",
             "linkToContent": 
-            "",
-            "description":
-            ""
+            "https://www.youtube.com/embed/jO4CpWPoODU"
         },
         "v5":{
-            "subjectTag": "",
-            "title":"",
+            "subjectTag": "Math",
+            "title":"Solution to PMM GCE 2020 Q4",
             "linkToContent": 
-            "",
-            "description":
-            ""
+            "https://www.youtube.com/embed/uWGOLyjzN4g"
         },
         
         "v6":{
-            "subjectTag": "",
-            "title":"",
+            "subjectTag": "Phy",
+            "title":"Measuring resistivity of a wire",
             "linkToContent": 
-            "",
-            "description":
-            ""
+            "https://www.youtube.com/embed/sGhGRsZEwHo"
         },
         "v7":{
-            "subjectTag": "",
-            "title":"",
+            "subjectTag": "ICT",
+            "title":"Guide to Logic Gates",
             "linkToContent": 
-            "",
-            "description":
-            ""
+            "https://www.youtube.com/embed/9pMbbrbvhUQ"
         },
         "v8":{
-            "subjectTag": "",
-            "title":"",
+            "subjectTag": "Phy",
+            "title":"Measurement with Micrometer Screwguage",
             "linkToContent": 
-            "",
-            "description":
-            ""
+            "https://www.youtube.com/embed/JbMN3k_WZ1Q"
         },
         "v9":{
-            "subjectTag": "",
-            "title":"",
+            "subjectTag": "CSC",
+            "title":"Normalising A Database: [1NF, 2NF, 3NF]",
             "linkToContent": 
-            "",
-            "description":
-            ""
+            "https://www.youtube.com/embed/1RpLqu3iW3U"
         },
         "v10":{
-            "subjectTag": "",
-            "title":"",
+            "subjectTag": "Fmath",
+            "title":"Solving linear differential equations",
             "linkToContent": 
-            "",
-            "description":
-            ""
+            "https://www.youtube.com/embed/eCm-eKH7Ees"
         },
         "v11":{
-            "subjectTag": "",
-            "title":"",
+            "subjectTag": "Math",
+            "title":"Solution to FET Buea 'Concours' Math",
             "linkToContent": 
-            "",
-            "description":
-            ""
+            "https://www.youtube.com/embed/Md4VX5639cU"
         },
         "v12":{
-            "subjectTag": "",
-            "title":"",
+            "subjectTag": "Chem",
+            "title":"Chemistry A level 2020 P1 Solutions",
             "linkToContent": 
-            "",
-            "description":
-            ""
+            "https://www.youtube.com/embed/_LdYPIXhf0U"
         },
         "v13":{
             "subjectTag": "",
             "title":"",
             "linkToContent": 
-            "",
-            "description":
             ""
         },
         "v14":{
             "subjectTag": "",
             "title":"",
             "linkToContent": 
-            "",
-            "description":
             ""
         },
         "v15":{
             "subjectTag": "",
             "title":"",
             "linkToContent": 
-            "",
-            "description":
             ""
         },
         "v16":{
             "subjectTag": "",
             "title":"",
             "linkToContent": 
-            "",
-            "description":
             ""
         },
         "v17":{
             "subjectTag": "",
             "title":"",
             "linkToContent": 
-            "",
-            "description":
             ""
         },
         "v18":{
             "subjectTag": "",
             "title":"",
             "linkToContent": 
-            "",
-            "description":
             ""
         },
         "v19":{
             "subjectTag": "",
             "title":"",
             "linkToContent": 
-            "",
-            "description":
             ""
         },
         "v20":{
             "subjectTag": "",
             "title":"",
             "linkToContent": 
-            "",
-            "description":
-            ""
-        },
-        "v21":{
-            "subjectTag": "",
-            "title":"",
-            "linkToContent": 
-            "",
-            "description":
-            ""
-        },
-        "v22":{
-            "subjectTag": "",
-            "title":"",
-            "linkToContent": 
-            "",
-            "description":
-            ""
-        },
-        "v23":{
-            "subjectTag": "",
-            "title":"",
-            "linkToContent": 
-            "",
-            "description":
-            ""
-        },
-        "v24":{
-            "subjectTag": "",
-            "title":"",
-            "linkToContent": 
-            "",
-            "description":
-            ""
-        },
-        "v25":{
-            "subjectTag": "",
-            "title":"",
-            "linkToContent": 
-            "",
-            "description":
             ""
         }
     },

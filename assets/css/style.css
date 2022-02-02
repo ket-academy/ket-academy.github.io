@@ -412,6 +412,7 @@ ul{
     background-color: #2096c5;
 }
 
+/* Online Prescence */
 
 .media-presence{
     margin: 20px 0;
@@ -421,6 +422,75 @@ ul{
     width: 100%;
 }
 
+.media-presence .container {
+    text-align: center;
+}
+
+.media-presence .container h3{
+    font-weight: 24px;
+    font-weight: 700;
+}
+.media-presence .container p{
+    font-size: 18px;
+    font-family: "Poppins", "Roboto";
+}
+
+.media{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.media div{
+    width: 300px;
+    height: 200px;
+    height: fit-content;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin: 20px;
+    z-index: 55;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 10px;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    transition: 560ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+   
+}
+
+.media div:hover{
+     background-color: rgba(0, 0, 0, 0.5);
+    color:rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 24px -4px rgba(0, 0, 0, 0.12);
+}
+
+.media div a{
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #2096c5;
+    color: #111;
+}
+.media div a:hover{
+    background: #2096c5;
+}
+
+.media div img{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+/* FAQ section */
 .faq-section{
     padding: 60px 0;
     background: rgba(0, 0, 0, .8);
@@ -463,6 +533,9 @@ ul{
     border-radius: 5px;
     position: relative;
     text-justify: center;
+}
+.faq-list ul li article{
+    display: flex;
 }
 .faq-list ul li a{
     color: black !important;
@@ -562,7 +635,7 @@ ul{
     padding-top: 60px;
 }
 
-#footer #blued{
+#footer .blued{
     filter: hue-rotate(180deg);
 }
 
@@ -747,30 +820,54 @@ ul{
 }
 
 #about > .leadership > .container > article{
-    padding: auto;
-    margin: auto;
+    padding: 5px ;
     margin: 20px;
     border: 2px solid blue;
-}
-
-#about > .leadership > .container > article div{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
+
+#about > .leadership > .container > article .person{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+}
+
 #about .leadership .container img{
     width: 200px;
 }
 
-#about .leadership .container div p {
+#about .leadership .container .person p {
+    color: #eee;
     text-align: center;
     text-justify: center;
     float: right;
 }
 #about .leadership .container div p span{
     display: block;
+    padding: 5px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: "Poppins", "Roboto";
 }
 
-#about > .leadership > .container > article > p{
+#about > .leadership > .container > article > .per-text{
+    width: 400px;
+    text-align: center;
+    text-justify: center;
+    padding:0px 10px;
+}
+
+.per-text p{
+    text-justify: center;
 
 }
 
@@ -780,17 +877,10 @@ ul{
     border: 2px solid blue;
 }
 
-#about .history .container .pole{
-    float: left;
-    height: 100% !important;
-    width: 10px;
-    background: rgb(0 0 0 / 95%);
-    border: 3px solid green;
 
-}
 
 #about .history .container ul{
-
+    list-style: none;
 }
 
 
@@ -803,9 +893,6 @@ ul{
 **********************************************************************************/
 
 
-/**************************************
-***********ambassardors******************
-************************************/
 
 #team{
     padding-block: 30px;
@@ -1374,7 +1461,7 @@ ul{
     height: fit-content;
     padding: 10px;
     margin-bottom: 15px;
-    margin: 20x;
+    margin: 10px;
     z-index: 55;
     background-color: rgba(255, 255, 255, .9);
     border-radius: 10px;
