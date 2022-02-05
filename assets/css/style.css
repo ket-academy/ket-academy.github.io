@@ -526,6 +526,7 @@ ul{
 }
 
 .faq-list ul li{
+    width: 100%;
     padding: 10px;
     color: #333;
     background-color: #fff;
@@ -534,6 +535,17 @@ ul{
     position: relative;
     text-justify: center;
 }
+@media screen and (max-width: 600px){
+    .faq-list ul{
+       padding: 0px;
+    }
+    .faq-list ul li a{
+        font-size: 16px;
+    }
+    .faq-list ul li div p{
+        font-size: 14px;
+    }
+}
 .faq-list ul li article{
     display: flex;
 }
@@ -541,8 +553,8 @@ ul{
     color: black !important;
     position: relative;
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
     line-height: 24px;
+    font-size: 18px;
     font-weight: 500;
     padding: 0 30px;
     outline: none;
@@ -556,6 +568,8 @@ ul{
 {
     color: #5e82f7 !important;
 }
+
+
 .faq-section .faq-list .icon-help {
     font-size: 24px;
     color: #5e82f7;
