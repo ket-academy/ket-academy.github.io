@@ -55,10 +55,26 @@
             <!-- <img class = "logo" src="./assets/img/ket-logo-fixed.png" alt="KET Acdemy LOgo"> -->
             <h1 class="logo "><a href="index.html"><span>KET </span>ACADEMY</a></h1>
             <!--Nav bar list items-->
-            <nav class="navbar mobile-nav">
+            <nav class="navbar nav-desktop">
                 <ul class="nav-list-items">
-                    <li class="list-item" tip="HOME"><a href="./index.html">🏡Home</a></li>
-                    <li class="list-item active-list-item"  tip="ABOUT"><a href="./about.html">📋About</a></li>
+                    <li class="list-item active-list-item" tip="HOME"><a href="./index.html">🏡Home</a></li>
+                    <li class="list-item"  tip="ABOUT"><a href="./about.html">📋About</a></li>
+                    <li class="list-item"  tip="SERVICES"><a href="./services.html">🗼Serivces</a></li>
+                    <li class="list-item"  tip="TEAM|AMBASSADORS"><a href="./team.html">🤼‍♀️Team</a></li>
+                    <li class="list-item"  tip="LIBRARY" ><a href="./library.html">📚Library</a></li>
+                    <li class="list-item"  tip="TESTIMONIALS"><a href="./testimonials.html">🎤Testimonials</a></li>
+                    <li class="list-item"  tip="CONTACT"><a href="./contact.html">📞Contact</a></li>
+                </ul>
+                <!--<i class="bu bi-list"></i> -->
+            </nav>
+
+            <!--nav for mobie. Had to create this incase one 
+            mini/maximises their browser window
+            -->
+            <nav class="navbar mobile-nav" style="display: none">
+                <ul class="nav-list-items">
+                    <li class="list-item active-list-item" tip="HOME"><a href="./index.html">🏡Home</a></li>
+                    <li class="list-item"  tip="ABOUT"><a href="./about.html">📋About</a></li>
                     <li class="list-item"  tip="SERVICES"><a href="./services.html">🗼Serivces</a></li>
                     <li class="list-item"  tip="TEAM|AMBASSADORS"><a href="./team.html">🤼‍♀️Team</a></li>
                     <li class="list-item"  tip="LIBRARY" ><a href="./library.html">📚Library</a></li>
@@ -245,7 +261,11 @@
       <footer class="footer" id="footer">
         <div class="footer-items">
             <div class="address">
-                <h4>KET Academy <i class="bi bi-geo-alt-fill"> </i></h4>
+                <!-- <h1 class="logo "><a href="index.html"><span>KET </span>ACADEMY </a>
+                    <span class="blued"> <i style="font-size: 24px;" class="bi bi-geo-alt-fill blued"> </i> </span>
+                   </h1>
+                    -->
+                <h4>KET Academy <i class="bi bi-geo-alt-fill blued"> </i></h4>
                 <span>
                 <p>Chappelle Obili, <br>
                    8687 Yaounde, <br>
@@ -258,7 +278,7 @@
                 </p>
             </div>
             <div class="footer-list">
-                <h4>Useful Links 🧭</h4>
+                <h4>Useful Links <span class="blued">🧭</span></h4>
                 <ul class="footer-list-items">
                     <li class="list-item active"><i class="bu bi-link"></i> <a href="./index.html"> Home</a>
                     <li class="list-item"><i class="bu bi-link"></i> <a href="./about.html"> About</a></li>
@@ -271,11 +291,11 @@
             </div>
             
             <div class="newsletter">
-                <h4>Join Our Newsletter 🔥</h4>
+                <h4>Join Our Newsletter <span class="blued">🔥</span></h4>
                     <p>Get frequent updates on opportunities and study material</p>
                 <form class= "needs-validation d-flex" action="submit" method="post">
                     <input type="email" placeholder=" Enter Email..." id="email" required>
-                    <input class="btn btn-primary" type="submit" value="🚀Sign Up">
+                    <input class="btn btn-primary" type="submit" value="🚀Subscribe">
                 </form>
             </div>
         </div>

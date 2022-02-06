@@ -55,14 +55,30 @@
             <!-- <img class = "logo" src="./assets/img/ket-logo-fixed.png" alt="KET Acdemy LOgo"> -->
             <h1 class="logo "><a href="index.html"><span>KET </span>ACADEMY</a></h1>
             <!--Nav bar list items-->
-            <nav class="navbar mobile-nav">
+            <nav class="navbar nav-desktop">
                 <ul class="nav-list-items">
-                    <li class="list-item" tip="HOME"><a href="./index.html">🏡Home</a></li>
+                    <li class="list-item active-list-item" tip="HOME"><a href="./index.html">🏡Home</a></li>
                     <li class="list-item"  tip="ABOUT"><a href="./about.html">📋About</a></li>
                     <li class="list-item"  tip="SERVICES"><a href="./services.html">🗼Serivces</a></li>
                     <li class="list-item"  tip="TEAM|AMBASSADORS"><a href="./team.html">🤼‍♀️Team</a></li>
                     <li class="list-item"  tip="LIBRARY" ><a href="./library.html">📚Library</a></li>
-                    <li class="list-item  active-list-item"  tip="TESTIMONIALS"><a href="./testimonials.html">🎤Testimonials</a></li>
+                    <li class="list-item"  tip="TESTIMONIALS"><a href="./testimonials.html">🎤Testimonials</a></li>
+                    <li class="list-item"  tip="CONTACT"><a href="./contact.html">📞Contact</a></li>
+                </ul>
+                <!--<i class="bu bi-list"></i> -->
+            </nav>
+
+            <!--nav for mobie. Had to create this incase one 
+            mini/maximises their browser window
+            -->
+            <nav class="navbar mobile-nav" style="display: none">
+                <ul class="nav-list-items">
+                    <li class="list-item active-list-item" tip="HOME"><a href="./index.html">🏡Home</a></li>
+                    <li class="list-item"  tip="ABOUT"><a href="./about.html">📋About</a></li>
+                    <li class="list-item"  tip="SERVICES"><a href="./services.html">🗼Serivces</a></li>
+                    <li class="list-item"  tip="TEAM|AMBASSADORS"><a href="./team.html">🤼‍♀️Team</a></li>
+                    <li class="list-item"  tip="LIBRARY" ><a href="./library.html">📚Library</a></li>
+                    <li class="list-item"  tip="TESTIMONIALS"><a href="./testimonials.html">🎤Testimonials</a></li>
                     <li class="list-item"  tip="CONTACT"><a href="./contact.html">📞Contact</a></li>
                 </ul>
                 <!--<i class="bu bi-list"></i> -->
@@ -298,13 +314,15 @@
                 <div class="img-box">
                     <img src="./assets/img/testimonials/Anushka.jpeg" alt="" >
                     <p class="bio">
-                        <span>Etengeneng Kelvin</span> <br>
-                        G.H.S Limbe, USS.
+                        <span>Kamaha Ronald Parfait</span> <br>
+                        Univeristy Student
                     </p>
                 </div>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium deleniti quidem, 
-                    fuga iusto ab exercitationem veniam dignissimos! Amet aliquid, excepturi.
+                    I applied as an ambassador to KET Academy to give back and help students facing the
+                     same challenges I faced, to be the hand as KET Academy granted me and to impact
+                      thousand of people which are academically hungry. From this, I can proudly say, 
+                      Thanks to KET Academy and dedicate my academic success to you
                 </p>
             </div>
 
@@ -312,13 +330,14 @@
                 <div class="img-box">
                     <img src="./assets/img/testimonials/Anushka.jpeg" alt="" >
                     <p class="bio">
-                        <span>Etengeneng Kelvin</span> <br>
-                        G.H.S Limbe, USS.
+                        <span>Tonlie Alian</span> <br>
+                        G.B.H.S Etoug-Egbe, USS.
                     </p>
                 </div>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium deleniti quidem, 
-                    fuga iusto ab exercitationem veniam dignissimos! Amet aliquid, excepturi.
+                    Yes the KET academy teaches its teachers. Talking of my last experiences as a KET academy 
+                    ambassador and at the same time a student, the KET academy shaped me, taught me how to organize
+                     my tasks. I created time to cooperate with other students as well as with other ambassadors
                 </p>
             </div>
 
@@ -326,13 +345,13 @@
                 <div class="img-box">
                     <img src="./assets/img/testimonials/Anushka.jpeg" alt="" >
                     <p class="bio">
-                        <span>Etengeneng Kelvin</span> <br>
-                        G.H.S Limbe, USS.
+                        <span>Berinyuy A. Vanessa</span> <br>
+                        University Student
                     </p>
                 </div>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium deleniti quidem, 
-                    fuga iusto ab exercitationem veniam dignissimos! Amet aliquid, excepturi.
+                    Being a KET Ambassadors and a student has given me an overview of what living for others looks like,
+                     what giving back to society entails and an additional feeling of selflessness.
                 </p>
             </div>
 
@@ -340,13 +359,12 @@
                 <div class="img-box">
                     <img src="./assets/img/testimonials/Anushka.jpeg" alt="" >
                     <p class="bio">
-                        <span>Etengeneng Kelvin</span> <br>
-                        G.H.S Limbe, USS.
+                        <span>Tasang Lesly</span> <br>
+                        University Student.
                     </p>
                 </div>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium deleniti quidem, 
-                    fuga iusto ab exercitationem veniam dignissimos! Amet aliquid, excepturi.
+                    Being a KET ambassador has helped me work as a team with other youth sharing the same passion and desire to help students. In so doing I have had the opportunity to be a leader, and learn how to manage people who have different views to work as one with a higher efficiency
                 </p>
             </div>
 
@@ -419,7 +437,11 @@
       <footer class="footer" id="footer">
         <div class="footer-items">
             <div class="address">
-                <h4>KET Academy <i class="bi bi-geo-alt-fill"> </i></h4>
+                <!-- <h1 class="logo "><a href="index.html"><span>KET </span>ACADEMY </a>
+                    <span class="blued"> <i style="font-size: 24px;" class="bi bi-geo-alt-fill blued"> </i> </span>
+                   </h1>
+                    -->
+                <h4>KET Academy <i class="bi bi-geo-alt-fill blued"> </i></h4>
                 <span>
                 <p>Chappelle Obili, <br>
                    8687 Yaounde, <br>
@@ -432,7 +454,7 @@
                 </p>
             </div>
             <div class="footer-list">
-                <h4>Useful Links 🧭</h4>
+                <h4>Useful Links <span class="blued">🧭</span></h4>
                 <ul class="footer-list-items">
                     <li class="list-item active"><i class="bu bi-link"></i> <a href="./index.html"> Home</a>
                     <li class="list-item"><i class="bu bi-link"></i> <a href="./about.html"> About</a></li>
@@ -445,11 +467,11 @@
             </div>
             
             <div class="newsletter">
-                <h4>Join Our Newsletter 🔥</h4>
+                <h4>Join Our Newsletter <span class="blued">🔥</span></h4>
                     <p>Get frequent updates on opportunities and study material</p>
                 <form class= "needs-validation d-flex" action="submit" method="post">
                     <input type="email" placeholder=" Enter Email..." id="email" required>
-                    <input class="btn btn-primary" type="submit" value="🚀Sign Up">
+                    <input class="btn btn-primary" type="submit" value="🚀Subscribe">
                 </form>
             </div>
         </div>

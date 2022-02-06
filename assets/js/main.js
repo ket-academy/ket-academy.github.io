@@ -53,7 +53,7 @@ mobileNavButton.onclick  = ()=>{
 //tool tip for navbar
 
 
-const menu = Array.from(document.querySelector('.nav-list-items').
+const menu = Array.from(document.querySelector('.navbar.nav-desktop > .nav-list-items').
                   getElementsByTagName("li"))
 
 Array.from(menu).forEach(menuItem=>{
