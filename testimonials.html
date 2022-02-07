@@ -469,10 +469,28 @@
             <div class="newsletter">
                 <h4>Join Our Newsletter <span class="blued">🔥</span></h4>
                     <p>Get frequent updates on opportunities and study material</p>
-                <form class= "needs-validation d-flex" action="submit" method="post">
-                    <input type="email" placeholder=" Enter Email..." id="email" required>
-                    <input class="btn btn-primary" type="submit" value="🚀Subscribe">
-                </form>
+                    <form 
+                    class= "needs-validation d-flex"
+                    name="gform" id="gform" enctype="text/plain"
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSdLM8d3vGut4fxCG2zDLJvlShs_PL1oeIFgBg1U7ARkrJoUtQ/formResponse?" target = "hidden_iframe" 
+                    onsubmit="submitted=true;"
+                    >
+                       <input type="email" placeholder="Enter Email..." 
+                           id="entry.941264948"
+                           name="entry.941264948"
+                           required>
+                       <input class="btn btn-primary" id="ent-111" type="submit" value="🚀Subscribe">
+                   </form>
+                   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                   <script type="text/javascript">var submitted=false;</script>
+                   <script type="text/javascript">
+                       $('#gform').on('submit', function(e) {
+                         $("#ent-111").css("color", " rgb(6, 160, 100)")
+                         $("#ent-111").css("background", "#fff")
+                         $("#ent-111").val("Subscribed✨")
+                         $('#gform #ent-111').prop("disabled", true)
+                         });
+                   </script>
             </div>
         </div>
         <hr>

@@ -1,4 +1,11 @@
 
-Form Used for website to gmail message sending:
 
-Third party form,
+Third party form
+
+
+For Suncribe form: check article below to find implemetation
+https://github.com/toperkin/staticFormEmails/blob/master/README.md
+
+
+For the contact page from: Formspree Used
+https://formspree.io/forms/xrgjpjqq/integration
