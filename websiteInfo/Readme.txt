@@ -3,7 +3,7 @@
 Third party form
 
 
-For Suncribe form: check article below to find implemetation
+For Subscribe form: check article below to find implemetation
 https://github.com/toperkin/staticFormEmails/blob/master/README.md
 
 
