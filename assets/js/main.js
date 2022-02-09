@@ -4,7 +4,7 @@ console.log("DEBUG:-$")
 
 //ono load show this
 $(window).on('load', function(){
-  setTimeout(removeLoader, 1000); //wait for page load PLUS two seconds.
+  setTimeout(removeLoader, 1000); //wait for page load PLUS one seconds.
 });
 function removeLoader(){
     $( "#loader" ).fadeOut("slow", function() {
@@ -21,12 +21,15 @@ function removeLoader(){
 //back top
 const backToTop = $('#back-to-top');
 
-$(window).on('scroll', (ev)=>{
-  if(window.scrollY < 100)
-  $('#back-to-top').display= 'none !important'
-  else
-  $('#back-to-top').display = 'inline-block'
-})
+// $(window).on('scroll', (ev)=>{
+//   if(window.scrollY < 100){
+//     console.log('hmmmm', window.scrollY)
+//     $('#back-to-top').css("display", 'none !important')
+
+//   }
+//   else
+//   $('#back-to-top').css("display", 'inline-block')
+// })
 
 //mobile nav
 
@@ -80,23 +83,27 @@ menu.forEach(menuItem=>{
 let images = document.getElementsByClassName('carousel');
 
 
-// (function (){
-//   if(!images)
-//     return
-//   let activeImage = images[0]
-//   let imgIndex = 0;
-//   function activateCarousel(){
-//     activeImage.style.zIndex = 9
-//     activeImage.style.transform = 'translateX(100%)'
-//     activeImage.style.zIndex = -349
-//     activeImage.style.transform = 'translateX(0)'
-//     imgIndex = (imgIndex+1)%images.length
-//     activeImage = images [imgIndex]
-//     console.log('hello--',imgIndex)
-//   }
-//   setInterval(activateCarousel, 2000);
-// }
-// )()
+
+(function (){
+  if(!images)
+    return
+  let activeImage = images[0]
+  let imgIndex = 0;
+  function activateCarousel(){
+    activeImage.style.zIndex = 9
+    activeImage.style.transform = 'translateX(100%)'
+    setTimeout(function(){
+      activeImage.style.zIndex = -349
+      activeImage.style.transform = 'translateX(0)'
+      imgIndex = (imgIndex+1)%images.length
+      activeImage = images [imgIndex]
+      console.log('hello--',imgIndex, "--", activeImage)
+    }, 2500)
+   
+  }
+  setInterval(activateCarousel, 3000);
+}
+)
 
 
 //faq section
@@ -119,7 +126,7 @@ function showHide(faq){
     icon.classList.add('bi-caret-up-fill')
     icon.classList.remove('bi-caret-down-fill')
     para.style.display = "block"
-    faq.classList.remove('.faq-active') 
+    faq.classList.add('faq-active') 
   }
 }
 (function(){

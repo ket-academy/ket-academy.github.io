@@ -334,21 +334,22 @@ ul{
 
 #intro > .carousel{
     position: absolute;
-    height: 100%;
+    height: 100%; 
     width: 100%;
     object-fit: cover;
     padding: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    z-index: -349;
-    transition: transform 1s ease-in-out;
+    z-index: -249;
     filter: brightness(50%);
     transform: translateX(0);
 }
-#carousel-active{
-    z-index: -399;
-}
 
+.carousel-active{
+    z-index: 7;
+    transform: translateX(100%);
+    transition: transform 2000ms ease;
+}
 .intro-text{
     width : 60%;
     text-align: center;
@@ -462,11 +463,11 @@ ul{
    
 }
 
-.media div:hover{
+/* .media div:hover{
      background-color: rgba(0, 0, 0, 0.5);
     color:rgba(255, 255, 255, 0.9);
     box-shadow: 0 0 24px -4px rgba(0, 0, 0, 0.12);
-}
+} */
 
 .media div a{
     font-weight: 500;
@@ -1482,6 +1483,9 @@ ul{
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
     transition: 560ms;
 }
+#services article p{
+    font-family: "Poppins", "Roboto", sans-serif;
+}
 
 #services article:hover{
     transform: translateY(-25px);
@@ -1574,7 +1578,7 @@ ul{
 
 #testimonials .student-testimonials > .container{
     margin: 20px;
-    width: 400px;
+    width: 420px;
 }
 
 #testimonials > .student-testimonials{
