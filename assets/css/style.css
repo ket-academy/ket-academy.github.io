@@ -699,7 +699,8 @@ ul{
 }
 
 .newsletter input[type="email"]{
-    border: 0;
+    outline: none;
+    border: none;
     padding: 4px 8px;
     width: calc(100% - 100px);
 }
