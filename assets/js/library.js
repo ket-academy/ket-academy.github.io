@@ -23,6 +23,13 @@ const subjects = {
   };
   
   
+
+  function collapse(element){
+    document.querySelector(element).style.display="none"
+  }
+  function expand(element){
+    document.querySelector(element).style.display = "block"
+  }
   
   
   let loadDataToUI = function(libraryData){
@@ -80,14 +87,8 @@ const subjects = {
         paperworkElement.style.backgroundImage = `url(${image})`
         
         //add event listeners for: expand, download, like and close-description
-  
-        /*function collapse(element){
-          document.querySelector(element).display="none"
-        }
-        function expand(element){
-          document.querySelector(element).display = "block"
-        }
-        function like(element){}*/
+
+        function like(element){}
   
         const descId = `atomicItem-desc-${itemId}`
         const paperWorkContent = 
