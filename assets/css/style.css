@@ -138,11 +138,22 @@ ul{
     text-transform: uppercase;
     background: linear-gradient(
         to top right,
-        rgba(1, 94, 74, .9),
-        rgba(18, 2, 138, 0.8), 
-        rgba(4, 93, 128, 0.9),
-        rgba(2, 75, 80, 0.89),
-        rgba(39, 4, 85, 0.9)
+        rgba(13, 167, 167, 0.9),
+        rgba(39, 26, 139, 0.8), 
+        rgba(25, 142, 189, 0.9),
+        rgba(7, 118, 126, 0.89),
+        rgba(109, 6, 245, 0.9)
+    );
+    background: linear-gradient(
+        to top right,
+        #725AC1,
+        #243186,
+        #1B3B6F,
+        #1C7293,
+        #1481BA,
+        #38369A,
+        #0410ff,
+        #2C3D55
     );
     background-size: 100%;
     background-clip: text;
@@ -320,6 +331,7 @@ ul{
 ***********************************************/
 
 .intro{
+    display: block;
     font-family: 'Roboto';
     background: rgba(0, 0, 0, 0.12);
     filter: blur(100%);
@@ -332,7 +344,31 @@ ul{
 }
 
 
-#intro > .carousel{
+.intro-slide {
+    position: relative;
+    padding-block: 10px;
+}
+
+.intro-slide .slide{
+    display: none;
+    position: absolute;
+    bottom: 28px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transform: translate(0);
+    transition: display 400ms;
+}
+
+
+.intro-slide #activated-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-slide .slide img{
     position: absolute;
     height: 100%; 
     width: 100%;
@@ -342,15 +378,10 @@ ul{
     overflow: hidden;
     z-index: -249;
     filter: brightness(50%);
-    transform: translateX(0);
 }
 
-.carousel-active{
-    z-index: 7;
-    transform: translateX(100%);
-    transition: transform 2000ms ease;
-}
-.intro-text{
+
+.text{
     width : 60%;
     text-align: center;
     text-justify: center;
@@ -358,12 +389,15 @@ ul{
     color: white;
     z-index: 20;
 }
+
+
 @media screen and (max-width: 800px){
-    .intro-text{
+    .text{
         width : 80%;
     }
 }
-.intro-text h1{
+
+.text h1{
     font-weight: 800;
     font-size: 2.8em;
     font-style: bold;
@@ -372,12 +406,39 @@ ul{
     text-shadow: 2px 1px 5px black;
 }
 
-.intro-text p{
+.text p{
     color:rgba(200,200,200, 1 );
     font-size: 2em;
     text-shadow: rgba(0, 0, 0, 0.8);
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
+}
+
+.intro-slide .dots{
+    position: absolute;
+    bottom: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-slide .dots .dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: green;
+    margin-inline: 5px;
+    background-color:  rgba(104, 130, 145, 0.9);
+}
+
+.intro-slide .dots .dot:hover, 
+.intro-slide .dots .active-dot
+{
+    background-color: rgba(20, 130, 219, 0.9);
 }
 
 
@@ -799,14 +860,23 @@ ul{
 #about section{
     margin: 10px 0px;
     padding: 10px 10px;
-    background: #c7cfd6;
+    /* background: #c7cfd6; */
 }
-#about section h2{
+#about section h2,
+#about section h1
+{
     text-align: center;
 }
 
 /* Mission and Vission */
-
+#about .mission-vision {
+    background-color: rgb(121, 175, 206);
+    background-image: url(../img/general/about-2.JPG);
+    background-size: cover;
+    background-position-x: center;
+    background-blend-mode: darken;
+    color: #fff;
+}
 .mission-vision .container{
     display: flex;
     justify-content: center;
@@ -814,7 +884,10 @@ ul{
     flex-wrap: wrap;
     padding: 10px;
     margin: 20px auto;
-    border: 1px solid blue;
+    max-width: 600px;
+    background-color: rgba(8, 8, 8, 0.8);
+    border-radius: 20px;
+
 }
 
 .mission-vision .container .content ul{
@@ -836,13 +909,14 @@ ul{
 }
 
 #about > .leadership > .container > article{
-    padding: 5px ;
-    margin: 20px;
-    border: 2px solid blue;
+    margin-block: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
 }
 
 #about > .leadership > .container > article .person{
@@ -851,9 +925,9 @@ ul{
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
+    margin-block: 10px;
+    padding-block: 10px;
+    width: 90%;
     background-color: black;
 }
 
@@ -870,13 +944,13 @@ ul{
 #about .leadership .container div p span{
     display: block;
     padding: 5px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-transform: uppercase;
     font-family: "Poppins", "Roboto";
 }
 
 #about > .leadership > .container > article > .per-text{
-    width: 400px;
+    max-width: 400px;
     text-align: center;
     text-justify: center;
     padding:0px 10px;
@@ -884,22 +958,59 @@ ul{
 
 .per-text p{
     text-justify: center;
-
 }
 
 /* history */
 #about .history .container{
     display: block;
-    border: 2px solid blue;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding-block: 10px;
 }
 
 
 
 #about .history .container ul{
     list-style: none;
+    padding-inline: 5px;
+}
+
+#about .history .container ul li{
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 5px;
+    padding: 5px;
+    margin-block: 10px;
+    padding-block: 10px;
 }
 
 
+#about #partners{
+    display: block;
+}
+
+#partners .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#partners .container .partner{
+    padding: 10px;
+    margin: 10px;
+}
+
+#partners .container .partner img{
+    width: 200px;
+    filter: grayscale(80%);
+    transition:  400ms ease-in-out;
+}
+#partners .container .partner img:hover{
+    width: 200px;
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
 
  
 /*********************************************************************************
@@ -1496,6 +1607,7 @@ ul{
 }
 
 #services article img{
+    filter: grayscale(100%);
     width: 130px;
     height: auto;
     margin: 12px;

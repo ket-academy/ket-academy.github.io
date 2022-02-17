@@ -80,30 +80,32 @@ menu.forEach(menuItem=>{
 
 //carousel
 
-let images = document.getElementsByClassName('carousel');
+const slides = document.querySelectorAll('#intro .slide')
+const dots = document.querySelectorAll('#intro .dot')
 
+let activatedSlide = document.querySelectorAll('#activated-slide')
+let activeDot = document.querySelectorAll('#intro .dots .active-dot')
 
+activatedSlide = slides[0]
+activeDot = dots[0]
 
-(function (){
-  if(!images)
-    return
-  let activeImage = images[0]
-  let imgIndex = 0;
-  function activateCarousel(){
-    activeImage.style.zIndex = 9
-    activeImage.style.transform = 'translateX(100%)'
-    setTimeout(function(){
-      activeImage.style.zIndex = -349
-      activeImage.style.transform = 'translateX(0)'
-      imgIndex = (imgIndex+1)%images.length
-      activeImage = images [imgIndex]
-      console.log('hello--',imgIndex, "--", activeImage)
-    }, 2500)
-   
-  }
-  setInterval(activateCarousel, 3000);
+let counter = 1, nItems = slides.length
+
+function changeSlide(){
+  activatedSlide.id = null
+  activeDot.classList.remove("active-dot")
+
+  activatedSlide = slides[counter]
+  activeDot = dots[counter]
+
+  activeDot.classList.add("active-dot")
+  activatedSlide.id = "activated-slide"
+
+  counter = (counter + 1)%nItems
+
 }
-)
+
+setInterval(changeSlide, 4000)
 
 
 //faq section
