@@ -36,17 +36,37 @@ const backToTop = $('#back-to-top');
 const mobileNavButton = document.querySelector('.mobile-menu-toggle')
 const mobileMenu = document.querySelector('.navbar.mobile-nav')
 
-mobileNavButton.onclick  = ()=>{
-  if(mobileMenu.style.display != 'none' && mobileMenu.style.display)
-  {
+// mobileNavButton.onclick  = ()=>{
+//   if(mobileMenu.style.display != 'none' && mobileMenu.style.display)
+//   {
 
-    mobileMenu.style.display = 'none'
+//     mobileMenu.style.display
+//     mobileMenu.style.display = 'none'
+//     mobileNavButton.classList.add('bi-list')
+//     mobileNavButton.classList.remove('bi-x')
+
+  
+//   }else{
+//     mobileMenu.style.display = 'flex'
+//     mobileNavButton.classList.add('bi-x')
+//     mobileNavButton.classList.remove('bi-list')
+    
+//   }
+// }
+
+mobileNavButton.onclick  = ()=>{
+  
+  if(mobileMenu.showing)
+  {
+    mobileMenu.style.transform = "translateX(100%)"
+    mobileMenu.showing = false
     mobileNavButton.classList.add('bi-list')
     mobileNavButton.classList.remove('bi-x')
 
   
   }else{
-    mobileMenu.style.display = 'flex'
+    mobileMenu.style.transform = "translateX(0)"
+    mobileMenu.showing = true
     mobileNavButton.classList.add('bi-x')
     mobileNavButton.classList.remove('bi-list')
     
@@ -86,12 +106,14 @@ const dots = document.querySelectorAll('#intro .dot')
 let activatedSlide = document.querySelectorAll('#activated-slide')
 let activeDot = document.querySelectorAll('#intro .dots .active-dot')
 
+
 activatedSlide = slides[0]
 activeDot = dots[0]
 
 let counter = 1, nItems = slides.length
 
 function changeSlide(){
+  if(!slides || !dots || !activatedSlide) return
   activatedSlide.id = null
   activeDot.classList.remove("active-dot")
 

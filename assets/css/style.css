@@ -260,6 +260,10 @@ ul{
     display: none;
 }
 
+#header .container > .mobile-nav{
+    display: none;
+}
+
 
 /** ====Media queries for small screen ******/
 
@@ -276,15 +280,19 @@ ul{
 
     #header .container > .mobile-nav{
         position: fixed;
-        display: none;
-        top: 55px;
+        display: flex;
+        top: 60px;
         bottom:0;
         left: 0;
         right: 0;
         margin: auto;
         width: 100%;
         z-index: 1001;
-        background-color: #fff;
+        color: #fff;
+        background-color: rgba(0, 0, 0, .97);
+        transform: translateX(100%);
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 100% 100%, 0 100%, 8% 77%, 8% 23%);
+        transition: 600ms ease-in-out;
     }
 
     .mobile-nav  >  .nav-list-items{
@@ -301,6 +309,7 @@ ul{
     }
     .mobile-nav > .nav-list-items a{
         font-size: 15px;
+        color: #fff;
     }
 
     .mobile-nav > .nav-list-items > .active-list-item a, .nav-list-items > .list-item:hover a{
@@ -870,8 +879,8 @@ ul{
 
 /* Mission and Vission */
 #about .mission-vision {
-    background-color: rgb(121, 175, 206);
-    background-image: url(../img/general/about-2.JPG);
+    background-color: rgb(128, 152, 165);
+    background-image: url(../img/carousel/about-2.JPG);
     background-size: cover;
     background-position-x: center;
     background-blend-mode: darken;
@@ -903,20 +912,29 @@ ul{
 
 #about > .leadership > .container{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 #about > .leadership > .container > article{
-    margin-block: 10px;
+    padding: 10px;
+    margin-block: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-
+    width: fit-content;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
+}
+
+@media screen and (min-width: 600px){
+    #about > .leadership > .container > article{
+        width: 420px;
+        margin: 30px;
+    }
 }
 
 #about > .leadership > .container > article .person{
@@ -998,7 +1016,7 @@ ul{
 
 #partners .container .partner{
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
 }
 
 #partners .container .partner img{
@@ -1031,9 +1049,14 @@ ul{
 #team .team-expo{
     padding: 10px;
     padding-block: 20px;
-    padding-inline: 50px;
+    padding-inline: 12px;
     background-color: rgba(153, 181, 207, 0.2);
     text-align: center;
+}
+@media(min-width: 600px){
+    #team .team-expo{
+        padding-inline: 50px;
+    }
 }
 
 #team .team-expo h2{
