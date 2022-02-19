@@ -934,8 +934,8 @@ ul{
 
 @media screen and (min-width: 600px){
     #about > .leadership > .container > article{
-        width: 420px;
-        margin: 30px;
+        width:500px;
+        margin: 20px;
     }
 }
 
