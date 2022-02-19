@@ -65,7 +65,7 @@ mobileNavButton.onclick  = ()=>{
 
   
   }else{
-    mobileMenu.style.transform = "translateX(0)"
+    mobileMenu.style.transform = "translateX(0%)"
     mobileMenu.showing = true
     mobileNavButton.classList.add('bi-x')
     mobileNavButton.classList.remove('bi-list')
