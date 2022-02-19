@@ -294,7 +294,7 @@ ul{
         clip-path: polygon(0 0, 100% 0, 100% 60%, 100% 100%, 0 100%, 8% 77%, 8% 23%);
         /* clip-path: polygon(0 0, 100% 0, 92% 23%, 92% 77%, 100% 100%, 0 100%, 8% 77%, 8% 23%); */
 
-        transition: 500ms ease-in-out;
+        transition: transform 500ms ease-in-out;
     }
 
     .mobile-nav  >  .nav-list-items{
