@@ -589,8 +589,16 @@ ul{
     font-weight: 600;
 }
 .faq-section .faq-title p a{
-    color: #a3b6c5;
-    text-decoration: dotted !important;
+    padding: 5px;
+    background-color: rgba(0, 140, 255, 0.5);
+    color: #031c30;
+    border-radius: 15px;
+    transition: 400ms;
+}
+
+.faq-section .faq-title p:hover a{
+    color: rgba(0, 140, 255, 0.5);
+    background-color: #031c30;;
 }
 
 
