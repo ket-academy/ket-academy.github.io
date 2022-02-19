@@ -346,7 +346,7 @@ ul{
     font-family: 'Roboto';
     background: rgba(0, 0, 0, 0.12);
     filter: blur(100%);
-    min-height: 800px;
+    min-height: 900px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -363,7 +363,7 @@ ul{
 .intro-slide .slide{
     display: none;
     position: absolute;
-    bottom: 28px;
+    /* bottom: 28px; */
     width: 100%;
     height: 100%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
